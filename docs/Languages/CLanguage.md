@@ -2,7 +2,7 @@
 This is my reading notes of the book named "C Primer Plus".
 
 [//]: # (Image References)
-[image1]: ./../images/CPrimerPlus.jpg "Cover"
+[image1]: ../../images/CPrimerPlus.jpg "Cover"
 
 
 ![alt text][image1]
