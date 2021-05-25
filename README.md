@@ -97,7 +97,9 @@ Kubeflow连接机器学习和云计算
 
 
 
-Reference List:
+### Reference List:
+Article:
+1. https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer
 Books: 
 1. "C Primer Plus"
 2. "C++ Primer"
