@@ -107,7 +107,8 @@ Article:
 6. https://www.simplilearn.com/
 7. https://www.coursera.org/specializations/jhu-data-science
 8. https://www.coursera.org/professional-certificates/ibm-data-science?utm_source=gg&utm_medium=sem&campaignid=2087860785&utm_campaign=10-IBM-Data-Science-ROW&utm_content=10-IBM-Data-Science-ROW&adgroupid=116274867101&device=c&keyword=&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=506892807488&hide_mobile_promo&gclid=EAIaIQobChMI662A9YbS8AIVjx0rCh3IvAWcEAAYAiAAEgJlCPD_BwE
-9. 
+9. https://en.wikipedia.org/wiki/SOLID
+10. 
 Books: 
 1. "C Primer Plus"
 2. "C++ Primer"
@@ -130,10 +131,11 @@ Mooc:
 Jobs Description:
 1. Apple Machine Learning Engineer-Applied ML Jobs
 https://jobs.apple.com/en-us/details/200166605/machine-learning-engineer-applied-ml
+https://jobs.apple.com/en-us/search?team=machine-learning-and-ai-SFTWR-MCHLN
+https://www.apple.com/careers/us/machine-learning-and-ai.html
 Baidu:
 https://baijiahao.baidu.com/s?id=1671805560612599328&wfr=spider&for=pc
 
 
 
 Tried to add some video
-
