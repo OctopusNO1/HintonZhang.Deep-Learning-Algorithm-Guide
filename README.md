@@ -100,6 +100,14 @@ Kubeflow连接机器学习和云计算
 ### Reference List:
 Article:
 1. https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer
+2. https://github.com/ZuzooVn/machine-learning-for-software-engineers
+3. https://www.codementor.io/@zuzoovn/how-i-plan-to-become-a-machine-learning-engineer-a4metbcuk
+4. https://datasciencedojo.com/
+5. https://www.datacamp.com/
+6. https://www.simplilearn.com/
+7. https://www.coursera.org/specializations/jhu-data-science
+8. https://www.coursera.org/professional-certificates/ibm-data-science?utm_source=gg&utm_medium=sem&campaignid=2087860785&utm_campaign=10-IBM-Data-Science-ROW&utm_content=10-IBM-Data-Science-ROW&adgroupid=116274867101&device=c&keyword=&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=506892807488&hide_mobile_promo&gclid=EAIaIQobChMI662A9YbS8AIVjx0rCh3IvAWcEAAYAiAAEgJlCPD_BwE
+9. 
 Books: 
 1. "C Primer Plus"
 2. "C++ Primer"
