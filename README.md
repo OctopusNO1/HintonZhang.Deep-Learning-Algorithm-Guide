@@ -2,10 +2,8 @@
 This is an Artificial Intelligence learning and Interview guide. 
 I help this guide can help you to be a Machine Engineer in Tencent.
 
-## Program Language 
+## 1. Program Language 
 ### C/C++ or Java
-1. [C Language](docs/Languages/CLanguage.md)
-2. [C++ Language](docs/Languages/C++Language.md)
 
 #### object-oriented program
 SOLID is a mnemonic acronym for 5 design principles of object-oriented programming intended to make software designs more understandable, flexible and maintainable. These principles were first introduced in Robert C.Martin's 2000 paper Design Principles and Design Patterns.
@@ -27,6 +25,10 @@ Data Analysis
 
 ## Machine Learning Algorithm
 ### Machine Learning
+#### Supervised Learning
+#### Unsupervised Learning
+#### 主攻ML
+
 #### Spark
 #### XGboost
 
