@@ -25,11 +25,28 @@ Data Structure & Basic Algorithm
 
 Data Analysis
 
-## Machine Learning Algorithm
+## Machine Learning Algorithm(important)
 ### Machine Learning
 #### Supervised Learning
+监督学习提供对错指示、告知最终答案。要实现的目标是"对于输入数据X能预测变量Y"
+Supervised learning generally includes two types: classification and regression. 
+The target variable of the classification problem is only valued in a limited 
+target set(nominal type). For example, the simplest handwritten digit recognition 
+problem, the target result is in the set{0,1,2,3,4,5,6,7,8,9}. The target variable 
+of the regression problem is numerical, that is, you can take a value from an 
+infinite set of values, such as predicting the price of a Lego toy set, it may be 
+any number you image.
+Several commonly used algorithms in supervised learning:  
+1. K-nearest neighbor algorithm
+2. Decision tree algorithm
+3. Naive Bayes algorithm
+
 #### Unsupervised Learning
-#### 主攻ML
+在没有老师的情况下，学生自学的过程。要回答的问题是"从数据X中能发现什么"
+Several commonly used algorithms in unsupervised learning:
+1. K-means clustering algorithm
+2. Spectral clustering algorithm
+3. Principal component analysis(PCA)
 
 #### Spark
 #### XGboost
@@ -72,6 +89,7 @@ AI政策
 AI Company
 Kubeflow连接机器学习和云计算
 机器学习中的并行计算
+
 ## Artificial Intelligence Theory's new directions
 1. 神经拓扑结构
 2. AI+MPC（多方计算）的隐私保护学习
@@ -104,3 +122,8 @@ Jobs Description:
 https://jobs.apple.com/en-us/details/200166605/machine-learning-engineer-applied-ml
 Baidu:
 https://baijiahao.baidu.com/s?id=1671805560612599328&wfr=spider&for=pc
+
+
+
+Tried to add some video
+
