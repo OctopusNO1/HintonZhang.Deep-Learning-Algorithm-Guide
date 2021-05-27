@@ -25,7 +25,7 @@ Data Structure & Basic Algorithm
 
 Data Analysis
 
-## Machine Learning Algorithm(important)
+## 2. Machine Learning Algorithm(important)
 ### Machine Learning
 #### Supervised Learning
 监督学习提供对错指示、告知最终答案。要实现的目标是"对于输入数据X能预测变量Y"
