@@ -9,19 +9,37 @@ This is my reading notes of the book named "C Primer Plus".
 
 
 
+Preface 前言
+
 C语言标准：非正式的K&R标准，发展到1990 ISO/ANSI标准，进而发展到2011 ISO/IEC标准。
 
-通过示例演示一两个概念，在介绍C语言细节的同时，讲解编程概念。以图表演示帮助读者理解。
+Approach and Goals 方法和目标
+C Primer Plus employs the following strategies:
+* Programming concepts are explained
+* Examples illustrate just one or two concepts at a time, because learning by doing is one of the most effective ways to master new information.
+通过示例演示一两个概念，在介绍C语言细节的同时，讲解编程概念。
+* Figures and illustrations clarify concepts that are difficult to grasp in words alone.
+以图表演示帮助读者理解。
+* Highlight boxes summarize the main features of C for easy reference and review.
+* Review questions and programming exercise at the end of each chapter allow you to test and improve your understanding of C.
 
-不仅要仔细阅读程序示例，还要亲自动手录入程序并运行。经常改动程序的某些部分，运行后看看有什么效果。多问多做。
+To gain the greatest benefit, you should take as active a role as possible in studying the topics in this book. 
+Don't just read the examples, enter them into your system, and try them. 
+不仅要仔细阅读程序示例，还要亲自动手录入程序并运行。
+Experiment-change part of a program to see what the effect is.
+Modify a program to do something slightly different. Ignore the occasional warnings and see what happens when you do the wrong thing. 
+经常改动程序的某些部分，运行后看看有什么效果。
+Try the questions and exercises. The more you do yourself, the more you will learn and remember.
+多问多做。
 
 
 
+Chapter 1. Getting Ready
 第1章 初识C语言
 
-1.1 C语言的起源
+1.1 Whence C? C语言的起源
 
-1.2 选择C语言的理由
+1.2 Why C? 选择C语言的理由
 
 1.2.1 设计特性
 
@@ -43,11 +61,11 @@ C语言标准：非正式的K&R标准，发展到1990 ISO/ANSI标准，进而发
 
 1.2.6 缺点
 
-1.3 C语言的应用范围
+1.3 Whither C? C语言的应用范围
 
-1.4 计算机能做什么
+1.4 What Computers Do? 计算机能做什么
 
-1.5 高级计算机语言和编译器
+1.5 High-level Computer Languages and Compilers 高级计算机语言和编译器
 
 高级计算机编程语言（如，C）相对机器语言简化了编程工作，并且具有更好的可读性。
 
@@ -191,7 +209,7 @@ int main(int argc, const char * argv[]) {
 
 
 
-第2章 C语言概述
+第2章 Introducing C / C语言概述
 
 本章内容如下：
 
@@ -241,7 +259,7 @@ C程序中有许多{cp->tort和*ptr++}这样古怪的符号。
 
 程序的输出在屏幕上一闪而过：在程序中添加额外的代码（在程序的return语句前添加一行代码getchar()），让窗口等待用户按下一个键后才关闭。
 
-2.2 示例解释
+2.2 The Example Explained 示例解释
 
 组成C程序的几个部分：
 
@@ -283,31 +301,132 @@ ANSI/ISO C规定了C编译器必须提供哪些头文件。有些程序要包含
 
  注意：为何不把输入和输出这些基本功能内置在语言中？因为并非所有的程序都会用到I/O（输入/输出）包。轻装上阵表现了C语言的哲学。正是这种经济使用资源的原则，使得C语言成为流行的嵌入式编程语言（例如，编写控制汽车自动燃油系统或蓝光播放机芯片的代码）。#include中的#符号表明。C预处理器在编译器接手之前处理这条指令。
 
-2. main()函数
+2. The main() Function 函数
 
 int main(void);
 
 程序清单2.1中表明该函数名为main。C程序要从main()函数开始执行，整数int是main()函数的返回类型（返回给操作系统）。
 
+3. Comments 注释
+Valid comment forms:
+/* This is a C comment. */
+Invalid comment forms:
+/* But this is invalid because there is no end marker.
 
+C99 added a second style of comments, one popularized by C++ and Java.
+// Here is a comment confined to one line.
 
-2.3 简单程序的结构
+4. Braces, Bodies, and Blocks / 花括号、函数体和块
+{
+...
+}
+Braces delimited the main() function. All C functions use braces to 
+mark the beginning as well as the end of the body of a function.
+Braces can also be used to gather statements within a function into a unit or block.
+If you are familiar with Pascal, ADA, Modula-2, or Algol, you will recognize the braces
+as being similar to begin and end in those languages.
 
-2.4 提高程序可读性的技巧
+5. Declarations 声明
 
-2.5 进一步使用C
+Data Types 数据类型
+integers, characters, floating point
 
-2.5.1 程序说明
+Name Choice 命名
 
-2.5.2 多条声明
+Four Good Reasons to Declare Variables 声明变量的4个理由
 
-2.5.3 乘法
+6. Assignment 赋值
 
-2.5.4 打印多个值
+7. The printf() Function 函数
 
-2.6 多个函数
+8. Return Statement 语句
 
-2.7 调试程序
+2.3 The Structure of a Simple Program 简单程序的结构
+General rules about C programs. 
+A simple standard C program should use the following format:
+#include <stdio.h>      Function:
+int main(void)          Header: Function name with arguments
+{                       Body: 
+    int q;              Declaration statement      
+    q = 1;              Assignment statement
+    printf("%d is neat. \n", q);   Function statement
+    return 0;       
+}
+
+2.4 Tips on Making Your Programs Readable 提高程序可读性的技巧
+Let the program logic much clearer and readable by following the conventions used in this chapter's example
+int main(void)  /* converts 2 fathoms音寻（测水深的单位） to feet英寸 */——写注释
+{
+int feet, fathoms;  ——————pick meaningful names 使用有意义的变量名
+            ——————————————use space 使用空行
+fathoms=2;  
+feet=6*fathoms; ——————————one statement per line 每行一条语句
+printf("There are %d feet in %d fathoms!\n", feet, fathoms);
+return 0;
+}
+
+2.5 Taking Another Step in Using C 进一步使用C
+The first sample program was pretty easy, and the next example, shown in Listing 2.2, isn't much harder.
+Listing 2.2     The fathm_ft.c Program
+
+2.5.1 Documentation 程序说明
+
+2.5.2 Multiple Declarations 多条声明
+
+2.5.3 Multiplication 乘法
+
+2.5.4 Printing Multiple Values 打印多个值
+
+2.6 Multiple Function 多个函数: function prototyping(函数原型), 
+function call(函数调用), function definition(函数定义)
+Listing 2.3     The two_func.c Program
+//* two_func.c -- a program using two functions in one file */
+#include <stdio.h>
+void butler(void);  /* ANSI/ISO C function prototyping 函数原型 */
+int main(void)  /* ANSI/ISO C function call 函数调用 */
+{
+    printf("I will summon the butler function.\n");
+    butler();
+    printf("Yes. Bring me some tea and writeable DVDs.\n");
+    
+    return 0;
+}
+void butler(void)   /* ANSI/ISO C function definition 函数定义 */
+{
+    printf("You rang, sir?\n");
+}
+The butler() function appears three times in this program. 
+The first appearances is in the prototype(函数原型), which informs the compiler about the functions to be used.
+The second appearance is in main() in the form of a function call(函数调用).
+Finally, the program presents the function definition(函数定义), which is the source code for the function itself.
+Let's look at each of these three appearances in turn.
+The C90 standard added prototypes(函数原型), and older compilers might not recognize them.(We'll tell you what to do 
+when using such compilers in a moment.) A prototype declares to the compiler that you are using a particular function.
+so it's called a function declaration. It also specifies properties of the function. For example, the first void in 
+the prototype for the butler() function indicates that butler() does not have a return value.(In general, a function 
+can return a value to the calling function for its use, but butler() doesn't.) The second void——the one in butler() 
+is used correctly. Note that void is used to mean "empty," not "invalid".
+Older C supported a more limited form of function declaration(函数声明) in which you just specified the return type 
+but omitted describing the arguments:
+void butler();
+Older C code uses function declarations like the preceding one instead of function prototypes. 
+Next, you invoke(调用) butler() in main() simply by giving its name, including parentheses(圆括号). 
+Finally, the function butler() is defined in the same manner as main(), with a function header and the body enclosed in braces.
+One point to note is that it is the location of the butler() call in main()——not the location of the butler() definition in the 
+file——that determines when the butler() function is executed. 
+The C standard recommends that you provide function prototypes(函数原型) for all functions you use.
+
+2.7 Introducing Debugging 调试程序
+Now that you can write a simple C program, you are in a position to make simple errors. Program errors often are called bugs, and 
+finding and fixing the errors is called debugging. Listing 2.4 presents a program with some bugs. See how many you can spot.
+Listing 2.4 The nogood.c Program
+/* nogood.c -- a program with errors */
+#include <stdio.h>
+int main(void)
+{
+    int n, int n2, int n3;
+    
+}
 
 2.7.1 语法错误
 

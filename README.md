@@ -2,8 +2,8 @@
 This is an Artificial Intelligence learning and Interview guide. 
 I help this guide can help you to be a Machine Engineer in Tencent.
 
-## 1. Program Language 
-### C/C++ or Java
+## 1. Program Language(important) 
+### 1.1 C/C++ or Java
 1. [C Language](docs/Languages/CLanguage.md)
 2. [C++ Language](docs/Languages/C++Language.md)
 
@@ -15,7 +15,7 @@ SOLID is a mnemonic acronym for 5 design principles of object-oriented programmi
 4. 
 5. 
 
-### Python 
+### 1.2 Python 
 
 Others: SQL, Swift
 
@@ -26,7 +26,7 @@ Data Structure & Basic Algorithm
 Data Analysis
 
 ## 2. Machine Learning Algorithm(important)
-### Machine Learning
+10 common machine learning algorithm
 #### Supervised Learning
 监督学习提供对错指示、告知最终答案。要实现的目标是"对于输入数据X能预测变量Y"
 Supervised learning generally includes two types: classification and regression. 
@@ -54,10 +54,24 @@ Several commonly used algorithms in unsupervised learning:
 ### Deep Learning
 #### Tensorflow
 #### Caffe
-Torch
-Lua Program
+Torch & Lua Program
 
 ### Reinforcement Learning
+
+
+
+## Computer Graphics
+### Chapter Four
+#### 4.1 Background: Farm Game
+#### 4.2 Cartesian Coordinate System
+#### 4.3 Point and Vector
+#### 4.4 Matrix
+#### 4.5 Matrix's Geometric Meaning: Transform
+#### 4.6 Coordinate space
+##### 4.6.4 Model Space
+##### 4.6.5 World Space
+##### 4.6.6 View Space
+#### 4.7 Normal Vector
 
 Data Mining
 Computer Vision
@@ -68,6 +82,7 @@ Planning
 Control
 Others：
 Quantum Computing+ML
+#### 
 ML DL-CV-Computer Graphics
 Smart Transportation and Self-Driving Car
 AI Robot
@@ -109,20 +124,24 @@ Article:
 8. https://www.coursera.org/professional-certificates/ibm-data-science?utm_source=gg&utm_medium=sem&campaignid=2087860785&utm_campaign=10-IBM-Data-Science-ROW&utm_content=10-IBM-Data-Science-ROW&adgroupid=116274867101&device=c&keyword=&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=506892807488&hide_mobile_promo&gclid=EAIaIQobChMI662A9YbS8AIVjx0rCh3IvAWcEAAYAiAAEgJlCPD_BwE
 9. https://en.wikipedia.org/wiki/SOLID
 10. 
-Books: 
+International Classic Books: 
 1. "C Primer Plus"
 2. "C++ Primer"
-3. "Python"
-4. "Machine Learning"
-5. 
-6. "数字图像处理(Digital Image Processing) (Rafael C.Gonzalez)"
-7. 
+3. "The C++ Programming Language"
+4. "Python"
+5. "Machine Learning"
+6. "Deep Learning"
+7. "数字图像处理(Digital Image Processing) (Rafael C.Gonzalez)"
+8. Code Complete (Developer Best Practices)
+9. "Unity Shader入门精要"
+10. 
 Papers:
 1. 
 Project:
 1. 
 Github: 
-1. 
+1. https://github.com/ZuzooVn/machine-learning-for-software-engineers
+
 Mooc:
 1. Coursera
 2. Edx
