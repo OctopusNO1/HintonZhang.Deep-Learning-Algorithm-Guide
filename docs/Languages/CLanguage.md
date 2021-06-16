@@ -107,7 +107,8 @@ ANSI/ISO联合委员会加入新特性，修订并发布了C99标准。
 
 1.7.2 第2步：设计程序
 
-1.7.3 第3步：编写代码
+1.7.3 Step3/第3步：Write the code/编写代码
+Listing 1.1 
 
 1.7.4 第4步：编译
 
@@ -127,19 +128,19 @@ ANSI/ISO联合委员会加入新特性，修订并发布了C99标准。
 
 最简单的程序：
 
-程序清单2.1 first.c程序
+Listing 程序清单 2.1 first.c程序
 
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
 
-    int num = 1;     /* 定义一个名为num的变量， */
+    int num = 1;   /* 定义一个名为num的变量，*/
 
-    printf("Hello, World!\n");
+    printf("Hello, World!\n");
 
-    printf("Hello, World! My favorite number is %d. \n", num);
+    printf("Hello, World! My favorite number is %d. \n", num);
 
-    return 0;
+    return 0;
 
 }
 
@@ -179,7 +180,7 @@ int main(int argc, const char * argv[]) {
 
 1.11 本章小结
 
-       C语言提供了大量的实用编程工具，能很好地控制硬件。相比其他程序，C程序更容易在系统间移植。C是编译型语言，C编译器和链接器是把C语言源代码转换成可执行代码的程序。
+   C语言提供了大量的实用编程工具，能很好地控制硬件。相比其他程序，C程序更容易在系统间移植。C是编译型语言，C编译器和链接器是把C语言源代码转换成可执行代码的程序。
 
 1.12 复习题
 
@@ -267,19 +268,19 @@ C程序中有许多{cp->tort和*ptr++}这样古怪的符号。
 
 2.2.1 第1遍：快速概要：概述程序中每行代码的作用，帮助读者初步了解程序。
 
-#include<stdio.h>     告诉C编译器把stdio.h（软件包的标准部分，提供键盘输入和屏幕输出的支持）中的内容包含在当前程序中。
+#include<stdio.h>  告诉C编译器把stdio.h（软件包的标准部分，提供键盘输入和屏幕输出的支持）中的内容包含在当前程序中。
 
-int main(void)      标准ANSI C定义的main()函数。返回int整数，函数名（void表明不带任何参数）。如果使用ANSI C之前的编译器，请忽略void
+int main(void)   标准ANSI C定义的main()函数。返回int整数，函数名（void表明不带任何参数）。如果使用ANSI C之前的编译器，请忽略void
 
 {
 
-     int num;       声明一个int类型的变量num
+  int num;   声明一个int类型的变量num
 
-     num = 1;       赋值表达式语句，将值1赋给名为num的变量
+  num = 1;   赋值表达式语句，将值1赋给名为num的变量
 
-     printf("My favorite number is %d because it is first.\n", num);        调用printf()函数（标准的C库函数，在屏幕上输出，光标停在同一行）
+  printf("My favorite number is %d because it is first.\n", num);    调用printf()函数（标准的C库函数，在屏幕上输出，光标停在同一行）
 
-     return 0;       return语句，结束main函数
+  return 0;   return语句，结束main函数
 
 }
 
@@ -299,7 +300,7 @@ include文件提供了一种方便的途径共享许多程序共有的信息。
 
 ANSI/ISO C规定了C编译器必须提供哪些头文件。有些程序要包含stdio.h，而有些不用。特定C实现的文档中应该包含对C库函数的说明。这些说明确定了使用哪些函数需要包含哪些头文件。例如，要使用print ln()函数，必须包含stdio.h头文件。省略必要的头文件可能不会影响某一特定程序，但是最好不要这样做。本书每次用到库函数，都会用#include指令包含ANSI/ISO标准指定的头文件。
 
- 注意：为何不把输入和输出这些基本功能内置在语言中？因为并非所有的程序都会用到I/O（输入/输出）包。轻装上阵表现了C语言的哲学。正是这种经济使用资源的原则，使得C语言成为流行的嵌入式编程语言（例如，编写控制汽车自动燃油系统或蓝光播放机芯片的代码）。#include中的#符号表明。C预处理器在编译器接手之前处理这条指令。
+注意：为何不把输入和输出这些基本功能内置在语言中？因为并非所有的程序都会用到I/O（输入/输出）包。轻装上阵表现了C语言的哲学。正是这种经济使用资源的原则，使得C语言成为流行的嵌入式编程语言（例如，编写控制汽车自动燃油系统或蓝光播放机芯片的代码）。#include中的#符号表明。C预处理器在编译器接手之前处理这条指令。
 
 2. The main() Function 函数
 
@@ -367,7 +368,7 @@ return 0;
 
 2.5 Taking Another Step in Using C 进一步使用C
 The first sample program was pretty easy, and the next example, shown in Listing 2.2, isn't much harder.
-Listing 2.2     The fathm_ft.c Program
+
 
 2.5.1 Documentation 程序说明
 
@@ -379,7 +380,8 @@ Listing 2.2     The fathm_ft.c Program
 
 2.6 Multiple Function 多个函数: function prototyping(函数原型), 
 function call(函数调用), function definition(函数定义)
-Listing 2.3     The two_func.c Program
+
+Listing 程序清单 2.3     The two_func.c Program
 //* two_func.c -- a program using two functions in one file */
 #include <stdio.h>
 void butler(void);  /* ANSI/ISO C function prototyping 函数原型 */
@@ -395,6 +397,7 @@ void butler(void)   /* ANSI/ISO C function definition 函数定义 */
 {
     printf("You rang, sir?\n");
 }
+
 The butler() function appears three times in this program. 
 The first appearances is in the prototype(函数原型), which informs the compiler about the functions to be used.
 The second appearance is in main() in the form of a function call(函数调用).
@@ -419,18 +422,38 @@ The C standard recommends that you provide function prototypes(函数原型) for
 2.7 Introducing Debugging 调试程序
 Now that you can write a simple C program, you are in a position to make simple errors. Program errors often are called bugs, and 
 finding and fixing the errors is called debugging. Listing 2.4 presents a program with some bugs. See how many you can spot.
-Listing 2.4 The nogood.c Program
+
+Listing 程序清单 2.4 The nogood.c Program
 /* nogood.c -- a program with errors */
 #include <stdio.h>
 int main(void)
-{
+(
     int n, int n2, int n3;
     
-}
+    /* this program has several errors
+    n = 5;
+    n2 = n * n;
+    n3 = n2 * n2;
+    printf("n = %d, n squared = %d, n cubed = %d\n", n, n2, n3)
 
-2.7.1 语法错误
+    return 0;
+)
 
-2.7.2 语义错误
+2.7.1 Syntax Errors 语法错误
+Listing 2.4 contains several syntax errors. 
+First, it uses parentheses圆括号() instead of braces大括弧{} to mark the body of the function
+——it uses a valid C symbol in the wrong place.
+Second, the declaration should have been 
+int n, n2, n3;
+or perhaps
+int n;
+int n2;
+int n3;
+Third, the example omits the */ symbol pair necessary to complete a comment. 
+Forth, it omits the mandatory法定的 semicolon分号; that should terminate终止 the printf() statement.
+
+2.7.2 Semantic Errors 语义错误
+In C, you commit a semantic error when you follow the rules of C correctly but to an incorrect end.
 
 2.7.3 程序状态
 

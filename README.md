@@ -61,6 +61,7 @@ Torch & Lua Program
 
 
 ## Computer Graphics
+### 
 ### Chapter Four
 #### 4.1 Background: Farm Game
 #### 4.2 Cartesian Coordinate System
@@ -123,8 +124,11 @@ Article:
 7. https://www.coursera.org/specializations/jhu-data-science
 8. https://www.coursera.org/professional-certificates/ibm-data-science?utm_source=gg&utm_medium=sem&campaignid=2087860785&utm_campaign=10-IBM-Data-Science-ROW&utm_content=10-IBM-Data-Science-ROW&adgroupid=116274867101&device=c&keyword=&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=506892807488&hide_mobile_promo&gclid=EAIaIQobChMI662A9YbS8AIVjx0rCh3IvAWcEAAYAiAAEgJlCPD_BwE
 9. https://en.wikipedia.org/wiki/SOLID
-10. 
+10. https://www.zhihu.com/question/309551737/answer/950028900
+11. 
+
 International Classic Books: 
+
 1. "C Primer Plus"
 2. "C++ Primer"
 3. "The C++ Programming Language"
@@ -135,12 +139,12 @@ International Classic Books:
 8. Code Complete (Developer Best Practices)
 9. "Unity Shader入门精要"
 10. 
-Papers:
-1. 
-Project:
-1. 
-Github: 
-1. https://github.com/ZuzooVn/machine-learning-for-software-engineers
+    Papers:
+11. 
+   Project:
+12. 
+   Github: 
+13. https://github.com/ZuzooVn/machine-learning-for-software-engineers
 
 Mooc:
 1. Coursera
