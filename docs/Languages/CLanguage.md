@@ -1,7 +1,7 @@
 # C-Primer-Plus-Reading-Notes
 This is my reading notes of the book named "C Primer Plus".
 
-[//]: # (Image References)
+[//]: # "Image References"
 [image1]: ../../images/CPrimerPlus.jpg "Cover"
 
 
@@ -135,11 +135,11 @@ Listing 程序清单 2.1 first.c程序
 int main(int argc, const char * argv[]) {
 
     int num = 1;   /* 定义一个名为num的变量，*/
-
+    
     printf("Hello, World!\n");
-
+    
     printf("Hello, World! My favorite number is %d. \n", num);
-
+    
     return 0;
 
 }
@@ -435,7 +435,7 @@ int main(void)
     n2 = n * n;
     n3 = n2 * n2;
     printf("n = %d, n squared = %d, n cubed = %d\n", n, n2, n3)
-
+    
     return 0;
 )
 
@@ -446,18 +446,85 @@ First, it uses parentheses圆括号() instead of braces大括弧{} to mark the b
 Second, the declaration should have been 
 int n, n2, n3;
 or perhaps
-int n;
+int n;  
 int n2;
 int n3;
 Third, the example omits the */ symbol pair necessary to complete a comment. 
 Forth, it omits the mandatory法定的 semicolon分号; that should terminate终止 the printf() statement.
+睡眠-熬夜X休息！饮食-凉食X，卫生-洗澡！心情-生气X轻松愉快！运动-没怎么运动X伸展脖颈！
+按时下班！运动，微信梅子聊天
+累-减法-不重要的事（Apple，职业ML）！
+读纸质书>电子书，少接触电脑手机等
+长高骗子：知乎抖音Quora>百度广告，没常识就要多社交沟通听说读写微信QQ回复；网上一搜就有，现实友人，自己动脑子思考
+恋爱骗子：知乎抖音Quora>百度广告，没常识就要多社交沟通听说读写微信QQ回复；网上一搜就有，现实友人，自己动脑子思考
+学前123，/，事业学习读幼教书，健康、家人
+学前456，|，事业金钱。。不能老呆在小位置/大位置，就只接触到这么几个人/多接触点人
+小学123，|，事业学习读书作业，河南那个小城市烂学校
+小学456，|，事业学习读书>X漫画阿衰X，倾听观察错题本
+初中，|，专注，小，倾听观察王选
+高一，|，理科>文科（ML>其他）
+高二，/，事业学习读书
+高三，|，事业学习读书，烂学校
+大学，
+|，建筑学，
+/，建筑学绩点 计算机将来跨专业后就不累 
+   认真做绩效 AIML将来重返AIML后就不累更容易
+|，计算机，培训？
+|，建筑学，
+Swift，很闲，积极做事
+JS，努力做事
+CTB，刚开始努力做事。后来我打算全力准备AI大赛，委托两个淘宝店去做PHP
+Bill，思考后继续努力行动
+少跟一些人来往，少听疯言疯语
+多跟算法人（李明喜等唐培培杭雨）来往
+人多的大企业，多社交
+少听疯言疯语（李总等人根本不懂深度学习）
+
 
 2.7.2 Semantic Errors 语义错误
 In C, you commit a semantic error when you follow the rules of C correctly but to an incorrect end.
+The example has one such error:
+// Listing 2.5 The stillbad.c Program
+/* stillbad.c -- a program with its syntax errors fixed */
+#include <stdio.h>
+int main(void)
+{
+    int n, n2, n3;
+    
+/* this program has a semantic error */
+    n = 5;
+    n2 = n * n;
+    // There is a semantic error: 
+    // n3 is supposed认为 to represent the cube of n, but the code sets it up to be the fourth power of n.
+    // The compiler does not detect semantic errors.
+    // You can find these kinds of errors by comparing what a program does to what you expected it to do.
+    n3 = n2 * n2;   
+    printf("n = %d, n squared = %d, n cuded = %d\n", n, n2, n3);
+    
+    return 0;
+}
 
-2.7.3 程序状态
+![Tracing a Program](/Users/swdiag/CLionProjects/Artificial-Intelligence-Guide/docs/images/CLanguage/Tracing a Program.png)
 
-2.8 关键字和保留标识符
+Figure 2.6 Tracing a program
+
+
+
+2.7.3 Program State 程序状态
+
+The program state is simply the set of values of all the variables at a given point in program execution. It's a snapshot of the current state of computation. It can be monitoring by tracing the program step-by-step manually, keeping track of each variable.
+
+Another approach to locating semantic problems is to sprinkle extra printf() statements throughout to monitor the values of selected variables at key points in the program.
+
+A third method for examine the program states is to use a debugger.
+
+
+
+2.8 Keywords and Reserved Identifiers 关键字和保留标识符
+
+
+
+
 
 2.9 关键概念
 
