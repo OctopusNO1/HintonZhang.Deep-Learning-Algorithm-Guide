@@ -9,12 +9,14 @@ This is my reading notes of the book named "C Primer Plus".
 
 
 
-Preface 前言
+## Preface 前言
 
 C语言标准：非正式的K&R标准，发展到1990 ISO/ANSI标准，进而发展到2011 ISO/IEC标准。
 
-Approach and Goals 方法和目标
+### Approach and Goals 方法和目标
+
 C Primer Plus employs the following strategies:
+
 * Programming concepts are explained
 * Examples illustrate just one or two concepts at a time, because learning by doing is one of the most effective ways to master new information.
 通过示例演示一两个概念，在介绍C语言细节的同时，讲解编程概念。
@@ -34,38 +36,39 @@ Try the questions and exercises. The more you do yourself, the more you will lea
 
 
 
-Chapter 1. Getting Ready
-第1章 初识C语言
+## Chapter 1. Getting Ready
 
-1.1 Whence C? C语言的起源
+### 第1章 初识C语言
 
-1.2 Why C? 选择C语言的理由
+#### 1.1 Whence C? C语言的起源
 
-1.2.1 设计特性
+#### 1.2 Why C? 选择C语言的理由
+
+#### 1.2.1 设计特性
 
 自顶向下的规划、结构化编程和模块化设计
 
-1.2.2 优点：控制能力、高效性、代码紧凑、可移植性
+#### 1.2.2 优点：控制能力、高效性、代码紧凑、可移植性
 
 具有通常是汇编语言才具有的微调控制能力（汇编语言是为特殊的中央处理单元设计的一系列内部指令，使用助记符来表示；不同的CPU系列使用不同的汇编语言），可以根据具体情况微调程序以获得最大运行速度或最有效地使用内存。
 
 
 
-1.2.3 可移植性
+#### 1.2.3 可移植性
 
-1.2.4 强大而灵活
+#### 1.2.4 强大而灵活
 
-1.2.5 面向程序员
+#### 1.2.5 面向程序员
 
 库函数
 
-1.2.6 缺点
+#### 1.2.6 缺点
 
-1.3 Whither C? C语言的应用范围
+### 1.3 Whither C? C语言的应用范围
 
-1.4 What Computers Do? 计算机能做什么
+### 1.4 What Computers Do? 计算机能做什么
 
-1.5 High-level Computer Languages and Compilers 高级计算机语言和编译器
+### 1.5 High-level Computer Languages and Compilers 高级计算机语言和编译器
 
 高级计算机编程语言（如，C）相对机器语言简化了编程工作，并且具有更好的可读性。
 
@@ -77,13 +80,13 @@ Chapter 1. Getting Ready
 
 C是结构化编程语言，Java是面向对象编程语言。
 
-1.6 语言标准
+### 1.6 语言标准
 
 《The C Programming Language》第1版是公认的C语言标准，通常称之为K&R C或经典C。该书附录中的“C语言参考手册”已成为实现C的指导标准，编译器都声称提供完整的K&R实现。
 
 C语言比其他语言更依赖库，UNIX实现提供的库已成为了C标准库。
 
-1.6.1 第1个ANSI/ISO C标准
+#### 1.6.1 第1个ANSI/ISO C标准
 
 ANSI/美国国家标准协会与1989年开发了ANSI C标准，定义了C语言和C标准库，也叫做C89。
 
@@ -91,38 +94,39 @@ ISO/国际标准化组织与1990年采用了ANSI C标准，并称为ISO C标准�
 
 两个标准是一样的。
 
-1.6.2 C99标准
+#### 1.6.2 C99标准
 
 ANSI/ISO联合委员会加入新特性，修订并发布了C99标准。
 
-1.6.3 C11标准
+#### 1.6.3 C11标准
 
 2011年，ANSI/ISO联合委员会加入新特性，修订并发布了C11标准。
 
-1.7 使用C语言的7个步骤
+### 1.7 使用C语言的7个步骤
 
 
 
-1.7.1 第1步：定义程序的目标
+#### 1.7.1 第1步：定义程序的目标
 
-1.7.2 第2步：设计程序
+#### 1.7.2 第2步：设计程序
 
-1.7.3 Step3/第3步：Write the code/编写代码
+#### 1.7.3 Step3/第3步：Write the code/编写代码
+
 Listing 1.1 
 
-1.7.4 第4步：编译
+#### 1.7.4 第4步：编译
 
 编译器是把源代码转换成可执行代码的程序。
 
-1.7.5 第5步：运行程序
+#### 1.7.5 第5步：运行程序
 
-1.7.6 第6步：测试和调试程序
+#### 1.7.6 第6步：测试和调试程序
 
-1.7.7 第7步：维护和修改代码
+#### 1.7.7 第7步：维护和修改代码
 
-1.7.8 说明
+#### 1.7.8 说明
 
-1.8 编程机制
+### 1.8 编程机制
 
 源代码文件：.c
 
@@ -144,45 +148,45 @@ int main(int argc, const char * argv[]) {
 
 }
 
-1.8.1 源代码、目标代码文件、可执行文件和库
+#### 1.8.1 源代码、目标代码文件、可执行文件和库
 
 
 
-1.8.2 UNIX系统
+#### 1.8.2 UNIX系统
 
 
 
-1.8.3 GNU编译器集合和LLVM项目
+#### 1.8.3 GNU编译器集合和LLVM项目
 
-1.8.4 Linux系统
+#### 1.8.4 Linux系统
 
-1.8.5 PC的命令行编译器
+#### 1.8.5 PC的命令行编译器
 
-1.8.6 集成开发环境（Windows）
+#### 1.8.6 集成开发环境（Windows）
 
-1.8.7 Windows/Linux
+#### 1.8.7 Windows/Linux
 
-1.8.8 Macintosh中的C——Xcode
+#### 1.8.8 Macintosh中的C——Xcode
 
-1.9 本书的组织结构
+### 1.9 本书的组织结构
 
 螺旋式方法：先在前几个章节中简单介绍一些主题，在后面章节再详细谈论相关内容。
 
 如：对学习C语言而言，理解函数至关重要。因此，我们在前几个章节中安排一些与函数相关的内容，让读者能今早在自己的程序中使用这些有用的工具，等第9章再详细学习使用函数。
 
-1.10 本书的约定
+### 1.10 本书的约定
 
-1.10.1 字体
+#### 1.10.1 字体
 
-1.10.2 程序输出
+#### 1.10.2 程序输出
 
-1.10.3 特殊元素
+#### 1.10.3 特殊元素
 
-1.11 本章小结
+### 1.11 本章小结
 
    C语言提供了大量的实用编程工具，能很好地控制硬件。相比其他程序，C程序更容易在系统间移植。C是编译型语言，C编译器和链接器是把C语言源代码转换成可执行代码的程序。
 
-1.12 复习题
+### 1.12 复习题
 
 1.对编程而言，可移植性意味着什么？
 
@@ -204,13 +208,13 @@ int main(int argc, const char * argv[]) {
 
 把编译器翻译好的源代码以及库代码和启动代码组合起来，生成一个可执行程序。
 
-1.13 编程练习
+### 1.13 编程练习
 
 1.你刚被MacroMuscle有限公司聘用。该公司准备进入欧洲市场，需要一个把英寸单位转换成厘米单位（1英寸=2.54厘米）的程序。该程序要提示用户输入英寸值。你的任务是定义程序目标和设计程序（编译过程的第1步和第2步）。
 
 
 
-第2章 Introducing C / C语言概述
+## 第2章 Introducing C / C语言概述
 
 本章内容如下：
 
@@ -230,7 +234,7 @@ int main(int argc, const char * argv[]) {
 
 C程序中有许多{cp->tort和*ptr++}这样古怪的符号。
 
-2.1 简单的C程序示例
+### 2.1 简单的C程序示例
 
 \n：回车换行。将光标从当前位置移到下一行的开头。
 
@@ -260,13 +264,13 @@ C程序中有许多{cp->tort和*ptr++}这样古怪的符号。
 
 程序的输出在屏幕上一闪而过：在程序中添加额外的代码（在程序的return语句前添加一行代码getchar()），让窗口等待用户按下一个键后才关闭。
 
-2.2 The Example Explained 示例解释
+### 2.2 The Example Explained 示例解释
 
 组成C程序的几个部分：
 
 
 
-2.2.1 第1遍：快速概要：概述程序中每行代码的作用，帮助读者初步了解程序。
+#### 2.2.1 第1遍：快速概要：概述程序中每行代码的作用，帮助读者初步了解程序。
 
 #include<stdio.h>  告诉C编译器把stdio.h（软件包的标准部分，提供键盘输入和屏幕输出的支持）中的内容包含在当前程序中。
 
@@ -284,9 +288,9 @@ int main(void)   标准ANSI C定义的main()函数。返回int整数，函数名
 
 }
 
-2.2.2 第2遍：程序细节：详细分析代码的具体含义，帮助读者深入了解程序。
+#### 2.2.2 第2遍：程序细节：详细分析代码的具体含义，帮助读者深入了解程序。
 
-1. #include指令和头文件
+1. ##### #include指令和头文件
 
 程序第一行#include<stdio.h>是一条C预处理指令（preprocessor directive），作用相当于把stdio.h文件中的所有内容都输入该行所在的位置。实际上是一种“拷贝-粘贴”的操作。
 
@@ -302,32 +306,34 @@ ANSI/ISO C规定了C编译器必须提供哪些头文件。有些程序要包含
 
 注意：为何不把输入和输出这些基本功能内置在语言中？因为并非所有的程序都会用到I/O（输入/输出）包。轻装上阵表现了C语言的哲学。正是这种经济使用资源的原则，使得C语言成为流行的嵌入式编程语言（例如，编写控制汽车自动燃油系统或蓝光播放机芯片的代码）。#include中的#符号表明。C预处理器在编译器接手之前处理这条指令。
 
-2. The main() Function 函数
+2. ##### The main() Function 函数
 
 int main(void);
 
 程序清单2.1中表明该函数名为main。C程序要从main()函数开始执行，整数int是main()函数的返回类型（返回给操作系统）。
 
-3. Comments 注释
-Valid comment forms:
-/* This is a C comment. */
-Invalid comment forms:
-/* But this is invalid because there is no end marker.
+3. ##### Comments 注释
+
+  Valid comment forms:
+  /* This is a C comment. */
+  Invalid comment forms:
+  /* But this is invalid because there is no end marker.
 
 C99 added a second style of comments, one popularized by C++ and Java.
 // Here is a comment confined to one line.
 
-4. Braces, Bodies, and Blocks / 花括号、函数体和块
-{
-...
-}
-Braces delimited the main() function. All C functions use braces to 
-mark the beginning as well as the end of the body of a function.
-Braces can also be used to gather statements within a function into a unit or block.
-If you are familiar with Pascal, ADA, Modula-2, or Algol, you will recognize the braces
-as being similar to begin and end in those languages.
+4. ##### Braces, Bodies, and Blocks / 花括号、函数体和块
 
-5. Declarations 声明
+  {
+  ...
+  }
+  Braces delimited the main() function. All C functions use braces to 
+  mark the beginning as well as the end of the body of a function.
+  Braces can also be used to gather statements within a function into a unit or block.
+  If you are familiar with Pascal, ADA, Modula-2, or Algol, you will recognize the braces
+  as being similar to begin and end in those languages.
+
+5. ##### Declarations 声明
 
 Data Types 数据类型
 integers, characters, floating point
@@ -336,13 +342,14 @@ Name Choice 命名
 
 Four Good Reasons to Declare Variables 声明变量的4个理由
 
-6. Assignment 赋值
+6. ##### Assignment 赋值
 
-7. The printf() Function 函数
+7. ##### The printf() Function 函数
 
-8. Return Statement 语句
+8. ##### Return Statement 语句
 
-2.3 The Structure of a Simple Program 简单程序的结构
+### 2.3 The Structure of a Simple Program 简单程序的结构
+
 General rules about C programs. 
 A simple standard C program should use the following format:
 #include <stdio.h>      Function:
@@ -354,7 +361,8 @@ int main(void)          Header: Function name with arguments
     return 0;       
 }
 
-2.4 Tips on Making Your Programs Readable 提高程序可读性的技巧
+### 2.4 Tips on Making Your Programs Readable 提高程序可读性的技巧
+
 Let the program logic much clearer and readable by following the conventions used in this chapter's example
 int main(void)  /* converts 2 fathoms音寻（测水深的单位） to feet英寸 */——写注释
 {
@@ -366,19 +374,20 @@ printf("There are %d feet in %d fathoms!\n", feet, fathoms);
 return 0;
 }
 
-2.5 Taking Another Step in Using C 进一步使用C
+### 2.5 Taking Another Step in Using C 进一步使用C
+
 The first sample program was pretty easy, and the next example, shown in Listing 2.2, isn't much harder.
 
+#### 2.5.1 Documentation 程序说明
 
-2.5.1 Documentation 程序说明
+#### 2.5.2 Multiple Declarations 多条声明
 
-2.5.2 Multiple Declarations 多条声明
+#### 2.5.3 Multiplication 乘法
 
-2.5.3 Multiplication 乘法
+#### 2.5.4 Printing Multiple Values 打印多个值
 
-2.5.4 Printing Multiple Values 打印多个值
+### 2.6 Multiple Function 多个函数: function prototyping(函数原型), 
 
-2.6 Multiple Function 多个函数: function prototyping(函数原型), 
 function call(函数调用), function definition(函数定义)
 
 Listing 程序清单 2.3     The two_func.c Program
@@ -419,7 +428,8 @@ One point to note is that it is the location of the butler() call in main()—�
 file——that determines when the butler() function is executed. 
 The C standard recommends that you provide function prototypes(函数原型) for all functions you use.
 
-2.7 Introducing Debugging 调试程序
+### 2.7 Introducing Debugging 调试程序
+
 Now that you can write a simple C program, you are in a position to make simple errors. Program errors often are called bugs, and 
 finding and fixing the errors is called debugging. Listing 2.4 presents a program with some bugs. See how many you can spot.
 
@@ -439,7 +449,8 @@ int main(void)
     return 0;
 )
 
-2.7.1 Syntax Errors 语法错误
+#### 2.7.1 Syntax Errors 语法错误
+
 Listing 2.4 contains several syntax errors. 
 First, it uses parentheses圆括号() instead of braces大括弧{} to mark the body of the function
 ——it uses a valid C symbol in the wrong place.
@@ -451,37 +462,11 @@ int n2;
 int n3;
 Third, the example omits the */ symbol pair necessary to complete a comment. 
 Forth, it omits the mandatory法定的 semicolon分号; that should terminate终止 the printf() statement.
-睡眠-熬夜X休息！饮食-凉食X，卫生-洗澡！心情-生气X轻松愉快！运动-没怎么运动X伸展脖颈！
-按时下班！运动，微信梅子聊天
-累-减法-不重要的事（Apple，职业ML）！
-读纸质书>电子书，少接触电脑手机等
-长高骗子：知乎抖音Quora>百度广告，没常识就要多社交沟通听说读写微信QQ回复；网上一搜就有，现实友人，自己动脑子思考
-恋爱骗子：知乎抖音Quora>百度广告，没常识就要多社交沟通听说读写微信QQ回复；网上一搜就有，现实友人，自己动脑子思考
-学前123，/，事业学习读幼教书，健康、家人
-学前456，|，事业金钱。。不能老呆在小位置/大位置，就只接触到这么几个人/多接触点人
-小学123，|，事业学习读书作业，河南那个小城市烂学校
-小学456，|，事业学习读书>X漫画阿衰X，倾听观察错题本
-初中，|，专注，小，倾听观察王选
-高一，|，理科>文科（ML>其他）
-高二，/，事业学习读书
-高三，|，事业学习读书，烂学校
-大学，
-|，建筑学，
-/，建筑学绩点 计算机将来跨专业后就不累 
-   认真做绩效 AIML将来重返AIML后就不累更容易
-|，计算机，培训？
-|，建筑学，
-Swift，很闲，积极做事
-JS，努力做事
-CTB，刚开始努力做事。后来我打算全力准备AI大赛，委托两个淘宝店去做PHP
-Bill，思考后继续努力行动
-少跟一些人来往，少听疯言疯语
-多跟算法人（李明喜等唐培培杭雨）来往
-人多的大企业，多社交
-少听疯言疯语（李总等人根本不懂深度学习）
 
 
-2.7.2 Semantic Errors 语义错误
+
+#### 2.7.2 Semantic Errors 语义错误
+
 In C, you commit a semantic error when you follow the rules of C correctly but to an incorrect end.
 The example has one such error:
 // Listing 2.5 The stillbad.c Program
@@ -501,7 +486,9 @@ int main(void)
     n3 = n2 * n2;   
     printf("n = %d, n squared = %d, n cuded = %d\n", n, n2, n3);
     
-    return 0;
+
+​	return 0;
+
 }
 
 ![Tracing a Program](/Users/swdiag/CLionProjects/Artificial-Intelligence-Guide/docs/images/CLanguage/Tracing a Program.png)
@@ -509,8 +496,7 @@ int main(void)
 Figure 2.6 Tracing a program
 
 
-
-2.7.3 Program State 程序状态
+#### 2.7.3 Program State 程序状态
 
 The program state is simply the set of values of all the variables at a given point in program execution. It's a snapshot of the current state of computation. It can be monitoring by tracing the program step-by-step manually, keeping track of each variable.
 
@@ -520,77 +506,94 @@ A third method for examine the program states is to use a debugger.
 
 
 
-2.8 Keywords and Reserved Identifiers 关键字和保留标识符
+### 2.8 Keywords and Reserved Identifiers 关键字和保留标识符
+
+Keywords are the vocabulary of C. Because they are special to C, you can't use them as identifiers, for example, or as variable names. In the following list of C keywords, boldface粗体 indicates keywords added by the C90 standard, italics斜体 indicates new keywords added by the C99 standard, and boldface italics indicates keywords added by the C11 standard.
+
+| **ISO C Keywords** |          |              |                    |
+| ------------------ | -------- | ------------ | ------------------ |
+| auto               | extern   | short        | while              |
+| break              | float    | **signed**   | **_Alignas**       |
+| char               | for      | sizeof       | **_Alignof**       |
+| **const**          | if       | struct       | **_Complex**       |
+| continue           | *inline* | switch       | **_Generic**       |
+| default            | int      | typedef      | **_Imaginary**     |
+| do                 | long     | union        | **_Noreturn**      |
+| double             | register | unsigned     | **_Static_assert** |
+| else               | restrict | void         | **#_Thread_local** |
+| **enum**           | return   | **volatile** |                    |
 
 
 
+### 2.9 Key Concepts 关键概念
 
-
-2.9 关键概念
-
-2.10 本章小结
-
-2.11 复习题
-
-2.12 编程练习
+Computer programming demands abstract, conceptual thinking combined with careful attention to detail. Compilers enforce the attention to detail. 
 
 
 
-第3章 数据和C
+### 2.10 本章小结
 
-3.1 示例程序
+### 2.11 复习题
 
-3.2 变量与常量数据
-
-3.3 数据：数据类型关键字
-
-3.3.1 整数和浮点数
-
-3.3.2 整数
-
-3.3.3 浮点数
-
-3.4 C语言基本数据类型
-
-3.4.1 INT类型
-
-3.4.2 其他整数类型
-
-3.4.3 使用字符：char类型
-
-3.4.4 _Bool类型
-
-3.4.5 可移植类型：std int.h和int types.h
-
-3.4.6 float、double和long double
-
-3.4.7 复数和虚数类型
-
-3.4.8 其他类型
-
-3.4.9 类型大小
-
-3.5 使用数据类型
-
-3.6 参数和陷阱
-
-3.7 转义序列示例
-
-3.7.1 程序运行情况
-
-3.7.2 刷新输出
-
-3.8 关键概念
-
-3.9 本章小结
-
-3.10 复习题
-
-3.11 编程练习
+### 2.12 编程练习
 
 
 
-第4章 字符串和格式化输入/输出
+## 第3章 数据和C
+
+### 3.1 示例程序
+
+### 3.2 变量与常量数据
+
+### 3.3 数据：数据类型关键字
+
+#### 3.3.1 整数和浮点数
+
+#### 3.3.2 整数
+
+#### 3.3.3 浮点数
+
+### 3.4 C语言基本数据类型
+
+#### 3.4.1 INT类型
+
+#### 3.4.2 其他整数类型
+
+#### 3.4.3 使用字符：char类型
+
+#### 3.4.4 _Bool类型
+
+#### 3.4.5 可移植类型：std int.h和int types.h
+
+#### 3.4.6 float、double和long double
+
+#### 3.4.7 复数和虚数类型
+
+#### 3.4.8 其他类型
+
+#### 3.4.9 类型大小
+
+### 3.5 使用数据类型
+
+### 3.6 参数和陷阱
+
+### 3.7 转义序列示例
+
+#### 3.7.1 程序运行情况
+
+#### 3.7.2 刷新输出
+
+### 3.8 关键概念
+
+### 3.9 本章小结
+
+### 3.10 复习题
+
+### 3.11 编程练习
+
+
+
+## 第4章 字符串和格式化输入/输出
 
 4.1 前导程序
 
