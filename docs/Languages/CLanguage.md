@@ -104,8 +104,6 @@ ANSI/ISO联合委员会加入新特性，修订并发布了C99标准。
 
 ### 1.7 使用C语言的7个步骤
 
-
-
 #### 1.7.1 第1步：定义程序的目标
 
 #### 1.7.2 第2步：设计程序
@@ -150,11 +148,7 @@ int main(int argc, const char * argv[]) {
 
 #### 1.8.1 源代码、目标代码文件、可执行文件和库
 
-
-
 #### 1.8.2 UNIX系统
-
-
 
 #### 1.8.3 GNU编译器集合和LLVM项目
 
@@ -186,31 +180,33 @@ int main(int argc, const char * argv[]) {
 
    C语言提供了大量的实用编程工具，能很好地控制硬件。相比其他程序，C程序更容易在系统间移植。C是编译型语言，C编译器和链接器是把C语言源代码转换成可执行代码的程序。
 
-### 1.12 复习题
+### 1.12 Review Questions 复习题
 
-1.对编程而言，可移植性意味着什么？
+1. 对编程而言，可移植性意味着什么？
 
 源代码无需修改就能在不同计算机系统中成功编译。
 
-2.解释源代码文件、目标代码文件和可执行文件有什么区别？
+2. 解释源代码文件、目标代码文件和可执行文件有什么区别？
 
 源代码文件包含程序员使用的任何编程语言编写的代码。目标代码文件包含机器语言代码，不必是完整的程序代码。可执行文件包含组成可执行程序的完整机器语言代码。
 
-3.编程的7个主要步骤是什么？
+3. 编程的7个主要步骤是什么？
 
 1）定义程序目标；2）设计程序；3）编写程序；4）编译程序；5）运行程序；6）测试和调试程序；7）维护和修改程序。
 
-4.编译器的任务是什么？
+4. 编译器的任务是什么？
 
 把源代码（如，用C语言编写的代码）翻译成等价的机器语言代码（也称作目标代码）。
 
-5.链接器的任务是什么？
+5. 链接器的任务是什么？
 
 把编译器翻译好的源代码以及库代码和启动代码组合起来，生成一个可执行程序。
 
 ### 1.13 编程练习
 
-1.你刚被MacroMuscle有限公司聘用。该公司准备进入欧洲市场，需要一个把英寸单位转换成厘米单位（1英寸=2.54厘米）的程序。该程序要提示用户输入英寸值。你的任务是定义程序目标和设计程序（编译过程的第1步和第2步）。
+1. 你刚被MacroMuscle有限公司聘用。该公司准备进入欧洲市场，需要一个把英寸单位转换成厘米单位（1英寸=2.54厘米）的程序。该程序要提示用户输入英寸值。你的任务是定义程序目标和设计程序（编译过程的第1步和第2步）。
+
+
 
 
 
@@ -527,19 +523,215 @@ Keywords are the vocabulary of C. Because they are special to C, you can't use t
 
 ### 2.9 Key Concepts 关键概念
 
-Computer programming demands abstract, conceptual thinking combined with careful attention to detail. Compilers enforce the attention to detail. 
+Computer programming demands abstract, conceptual thinking combined with careful attention to detail. Compilers enforce the attention to detail.
 
 
 
-### 2.10 本章小结
+### 2.10 本章小结 Summary
 
-### 2.11 复习题
+A C program consists of one or more C functions. Every C program must contain a function called *main()* because it is t he function called when the program starts up. 
 
-### 2.12 编程练习
+The *printf()* function can be used to print phrases and the values of variables. 
+
+The *syntax* of a language is the set of rules that governs the way in which valid statements in that languages are put together. 
+
+Finally, *keywords* are the vocabulary of the C language. 
 
 
 
-## 第3章 数据和C
+### 2.11 复习题 Review Questions
+
+You'll find answers to the review questions in Appendix A, "Answers to the Review Questions."
+
+1. What are the basic modules of a C program called?
+
+   
+
+2. What is a syntax error? Give an example of one in English and one in C.
+
+
+
+3. What is a semantic error? Give an example of one in English and one in C.
+
+   
+
+4. Indiana Sloth has prepared the following program and brought it to you for approval. Please help him out.
+
+   include studio.h
+
+   int main{void}	/* this prints the number of weeks in a year*/
+
+   (
+
+   int s
+
+   
+
+   s := 56;
+
+   print(There are s weeks in a year.);
+
+   return 0;
+
+
+
+5. Assuming that each of the following examples is part of a complete program, what will ease one print?
+
+   a. printf("Baa Baa Black Sheep.");
+
+   ​	printf("Have you any wool?\n");
+
+   b. printf("Begone!\n0 creature of lard!\n");
+
+   c. printf("What?\nNo/nfish?\n");
+
+   d. int num;
+
+   ​	num = 2;
+
+   ​	printf("%d + %d = %d", num, num, num + num);
+
+   
+
+6. Which of the following are C keywords? main. int, function, char, = 
+
+
+
+7. How would you print the values of the variables words and lines so they appear in the following form:
+
+   There were 3020 words and 350 lines.
+
+   Here, 3020 and 350 represent the values of the two variables.
+
+   
+
+8. Consider the following program:
+
+   #include <stdio.h>
+
+   int main(void)
+
+   {
+
+   ​	int a, b;
+
+   
+
+   ​		a = 5;
+
+   ​		b = 2;	/* line 7 */
+
+   ​		b = a;	/* line 8 */
+
+   ​		a = b;	/* line 9 */
+
+   ​		printf("%d %d\n", b, a);
+
+   ​		return 0;
+
+   }
+
+   What is the program state after line 7? Line 8? Line 9?
+
+   
+
+9. Consider the following program:
+
+   #include <stdio.h>
+
+   int main(void)
+
+   {
+
+   ​	int x, y;
+
+   ​	
+
+   ​	x = 10;
+
+   ​	y = 5;	/* line 7 */
+
+   ​	y = x + y;	/* line 8 */
+
+   ​	x = x*y;	/* line 9 */
+
+   ​	printf("%d %d\n", x, y);
+
+   ​	return 0;
+
+   }
+
+   What is the program state after line 7? Line 8? Line 9?
+
+
+
+### 2.12 Programming Exercises 编程练习
+
+**Reading** about C isn't enough. You should try writing one or two simple **programs** to see whether writing a program goes as smoothly as it looks in this chapter. A few suggestions follow, but you should also try to think up some problems yourself. You'll find **answers** to selected programming exercises on the publisher's website.
+
+1. Write a program that uses one printf() call to print your first name and last name on one line, uses a second printf() call to print your first and last names on two separate lines, and uses a pair of printf() calls to print your first and last names on one line. The output should look like this (but using your name):
+
+   Gustav Mahlor	<- First print statement
+
+   Gustav				  <- Second print statement
+
+   Mahler				  <- Still the second print statement
+
+   Gustav Mahler	 <- Third and fourth print statements
+
+2. Write a program to print your name and address.
+
+3. Write a program that converts your age in years to days and displays both values. At this point, don't worry about fractional years and leap years.
+
+4. Write a program that produces the following output:
+
+   For he's a jolly good fellow!
+
+   For he's a jolly good fellow!
+
+   For he's a jolly good fellow!
+
+   Which nobody can deny!
+
+   Have the program use two user-defined functions in addition to main(): one named jolly() that prints the “jolly good” message once, and one named deny() that prints the final line once.
+
+5. Write a program that produces the following output:
+
+   Brazil, Russia, 
+
+   India, China India, China,
+
+   Brazil, Russia
+
+   Have the program use two user-defined functions in addition to main(): one named br() that prints “Brazil, Russia” once, and one named ic() that prints “India, China” once. Let main() take care of any additional printing tasks.
+
+6. Write a program that creates an integer variable called toes. Have the program set toes to 10. Also have the program calculate what twice toes is and what toes squared is. The program should print all three values, identifying them.
+
+7. Many studies suggest that smiling has benefits. Write a program that produces the following output:
+
+   Smile!Smile!Smile! 
+
+   Smile!Smile! 
+
+   Smile!
+
+   Have the program define a function that displays the string Smile! once, and have the program use the function as often as needed.
+
+8. In C, one function can call another. Write a program that calls a function named one_ three(). This function should display the word one on one line, call a second function named two(), and then display the word three on one line. The function two() should display the word two on one line. The main() function should display the phrase starting now: before calling one_three() and display done! after calling it. Thus, the output should look like the following:
+
+   starting now: 
+
+   one
+
+   two
+
+   three
+
+   done!
+
+
+
+## 第3章 Data and C 数据和C
 
 ### 3.1 示例程序
 
