@@ -545,7 +545,7 @@ You'll find answers to the review questions in Appendix A, "Answers to the Revie
 
 1. What are the basic modules of a C program called?
 
-   
+ 
 
 2. What is a syntax error? Give an example of one in English and one in C.
 
