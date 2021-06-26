@@ -184,29 +184,47 @@ int main(int argc, const char * argv[]) {
 
 1. 对编程而言，可移植性意味着什么？
 
+A perfectly portable program is one whose source code can, without modification, be compiled to a successful program on a variety of different computer systems.
+
 源代码无需修改就能在不同计算机系统中成功编译。
 
-2. 解释源代码文件、目标代码文件和可执行文件有什么区别？
+2. 解释source code file(源代码文件)、object code file(目标代码文件)和executable file(可执行文件)有什么区别？
+
+A source code file contains code as written in whatever language the programmer is using. An object code file contains machine language code; it need not be the code for a complete program. An executable file contains the complete code, in machine language, constituting an executable program.
 
 源代码文件包含程序员使用的任何编程语言编写的代码。目标代码文件包含机器语言代码，不必是完整的程序代码。可执行文件包含组成可执行程序的完整机器语言代码。
 
 3. 编程的7个主要步骤是什么？
 
-1）定义程序目标；2）设计程序；3）编写程序；4）编译程序；5）运行程序；6）测试和调试程序；7）维护和修改程序。
+1）Defining program objectives 定义程序目标；
+
+2）Designing the program 设计程序；
+
+3）Coding the program 编写程序；
+
+4）Compiling the program 编译程序；
+
+5）Running the program 运行程序；
+
+6）Testing and debugging the program 测试和调试程序；
+
+7）Maintaining and modifying the program 维护和修改程序。
 
 4. 编译器的任务是什么？
+
+A compiler translates source code (for example, code written in C) to the equivalent machine language code, also termed *object* code.
 
 把源代码（如，用C语言编写的代码）翻译成等价的机器语言代码（也称作目标代码）。
 
 5. 链接器的任务是什么？
+
+The linker combines translated source code with library code and start-up code to produce an executable program.
 
 把编译器翻译好的源代码以及库代码和启动代码组合起来，生成一个可执行程序。
 
 ### 1.13 编程练习
 
 1. 你刚被MacroMuscle有限公司聘用。该公司准备进入欧洲市场，需要一个把英寸单位转换成厘米单位（1英寸=2.54厘米）的程序。该程序要提示用户输入英寸值。你的任务是定义程序目标和设计程序（编译过程的第1步和第2步）。
-
-
 
 
 
@@ -545,21 +563,25 @@ You'll find answers to the review questions in Appendix A, "Answers to the Revie
 
 1. What are the basic modules of a C program called?
 
- 
+   The basic modules of a C program are called functions(函数).
 
 2. What is a syntax error? Give an example of one in English and one in C.
 
+   A syntax error is a violation违反 of the rules governing治理 how sentences or programs are put together. Here's an example in English: "Me speak English good." Here's an example in C: 
 
+   printf"Where are the parentheses?";.
 
 3. What is a semantic error? Give an example of one in English and one in C.
 
-   
+   A semantic语义 error is one of meaning. Here's an example in English: "This sentence is excellent Czech." Here's a C example: 
+
+   thrice_n = 3 + n;
 
 4. Indiana Sloth has prepared the following program and brought it to you for approval. Please help him out.
 
    include studio.h
 
-   int main{void}	/* this prints the number of weeks in a year*/
+   int main{void}	/* this prints the number of weeks in a year/*
 
    (
 
@@ -573,7 +595,13 @@ You'll find answers to the review questions in Appendix A, "Answers to the Revie
 
    return 0;
 
+   
 
+   Line 1: Begin the line with a #; spell the file stdio.h; place the filename within angle brackets尖括号.
+
+   Line 2: Use(), not{}; end the comment with */, not /*.
+
+   
 
 5. Assuming that each of the following examples is part of a complete program, what will ease one print?
 
