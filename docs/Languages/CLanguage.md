@@ -761,25 +761,77 @@ You'll find answers to the review questions in Appendix A, "Answers to the Revie
 
 ## 第3章 Data and C 数据和C
 
-### 3.1 示例程序
+### 3.1 A Sample Program 示例程序
 
-### 3.2 变量与常量数据
+Listing 3.1	The platinum.c Program
 
-### 3.3 数据：数据类型关键字
+/* platinum.c	-- your weight in platinum */
 
-#### 3.3.1 整数和浮点数
+#include <stdio.h>
 
-#### 3.3.2 整数
+int main(void)
 
-#### 3.3.3 浮点数
+{
 
-### 3.4 C语言基本数据类型
+​	float weight;	/* user weight	*/
 
-#### 3.4.1 INT类型
+​	float value;		/* platinum equivalent	*/
 
-#### 3.4.2 其他整数类型
+​	
 
-#### 3.4.3 使用字符：char类型
+​	printf("Are you worth your weight in platinum?\n");
+
+
+
+​	scanf("", &weig);
+
+}
+
+### 	What's New in This Program?
+
+​	
+
+### 3.2 Data Variables and Constants 变量与常量数据
+
+### 3.3 Data: Data-Type Keywords 数据：数据类型关键字
+
+#### 3.3.1 Integer Versus Floating-Point Types 整数和浮点数
+
+#### 3.3.2 The Integer 整数
+
+#### 3.3.3 The Float-Point Number 浮点数
+
+### 3.4 Basic C Data Types C语言基本数据类型
+
+#### 3.4.1 The int Type INT类型
+
+##### Declaring an int Variable
+
+##### Initializing a Variable
+
+##### Type int Constants
+
+##### Printing int Values
+
+##### Octal and Hexadecimal 八进制和十六进制
+
+##### Displaying Octal and Hexadecimal
+
+#### 3.4.2 Other Integer Types 其他整数类型
+
+##### long Constants and long long Constants
+
+##### Printing short, long, long long, and unsigned Types
+
+#### 3.4.3 Using Characters: Type char 使用字符：char类型
+
+##### Declaring Type char Variables
+
+##### Character Constants and Initialization
+
+##### Nonprinting Characters
+
+##### Printing Characters
 
 #### 3.4.4 _Bool类型
 

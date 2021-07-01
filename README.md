@@ -182,6 +182,162 @@ NLP
 
 ##### 4.7 Normal Vector
 
+
+
+### Reading notes of *Learn OpenGL - Graphics Programming*
+
+《学习OpenGL - 图形编程》读书笔记
+
+Learn modern OpenGL graphics programming in a step-by-step fashion.
+
+#### Contents	目录
+
+######  1. Introduction	介绍
+
+**1.1 Prerequisites 先修**
+
+ 
+
+##### 	Part I	Getting started	开始
+
+2. ###### OpenGL
+
+3. ###### Creating a window
+
+4. ###### Hello Window
+
+5. ###### Hello Triangle 三角形
+
+6. ###### Shaders 着色器
+
+7. ###### Textures 纹理
+
+8. ###### Transformations 转变
+
+9. ###### Coordinate Systems 坐标系统
+
+10. ###### Camera 摄影机
+
+11. ###### Review 回顾
+
+    ##### Part II	Lighting	照明设备
+
+12. ###### Colors
+
+13. ###### Basic Lighting 基础光照
+
+14. ###### Materials 材料
+
+15. ###### Lighting Maps 光线地图
+
+16. ###### Light Casters 光线小脚轮
+
+17. ###### Multiple Lights 
+
+18. ###### Review 检查
+
+    ##### Part III	Model Loading	模型载入
+
+19. ###### Assimp 假定
+
+20. ###### Mesh 网
+
+21. ###### Model 
+
+    ##### Part IV	Advanced OpenGL
+
+22. ###### Depth Testing 深度测试
+
+23. ###### Stencil Testing 模板测试
+
+24. ###### Blending 混合
+
+25. ###### Face culling 面部剔除
+
+26. ###### Framebuffers 帧缓冲区
+
+27. ###### Cubemaps 立方体贴图
+
+28. ###### Advanced Data 
+
+29. ###### Advanced GLSL
+
+30. ###### Geometry Shaders 几何着色器
+
+31. ###### Instancing 例子
+
+32. ###### Anti Aliasing 反化名
+
+    ##### Part V Advanced Lighting 
+
+33. ###### Advanced Lighting
+
+34. ###### Gamma Correction 矫正
+
+35. ###### Shadow Mapping 阴影映射
+
+36. ###### Point Shadows 点映射
+
+37. ###### Normal Mapping 
+
+38. ###### Parallax Mapping 视差映射
+
+39. ###### HDR
+
+40. ###### Bloom
+
+41. ###### Deferred Shading
+
+42. ###### SSAO
+
+    ##### Part VI	PBR
+
+43. ###### Theory
+
+44. ###### Lighting
+
+45. ###### Diffuse irradiance 漫射辐照度
+
+46. ###### Specular iBL 镜面反射
+
+    ##### Part VII	In Practice 实践
+
+47. ###### Debugging 调试
+
+48. ###### Text Rendering 文字渲染
+
+    ##### Part VIII	2D Game
+
+49. ###### Breakout 爆发
+
+50. ###### Setting up 配置
+
+51. ###### Rendering Sprites 渲染精灵
+
+52. ###### Levels
+
+53. ###### Ball 
+
+54. ###### Collision detection 碰撞检测
+
+55. ###### Collision resolution 碰撞解析
+
+56. ###### Particles 粒子
+
+57. ###### Postprocessing 后期处理
+
+58. ###### Powerups 通电
+
+59. ###### Audio 声音
+
+60. ###### Render text 渲染文本
+
+61. ###### Final thoughts 最后的想法
+
+    ##### Index
+
+
+
 ### Valuable problems in computer graphics and game industry
 
 
@@ -279,8 +435,10 @@ International Classic Books:
 7. "数字图像处理(Digital Image Processing) (Rafael C.Gonzalez)"
 8. Code Complete (Developer Best Practices)
 9. "Unity Shader入门精要"
-10. 黑皮书系列
-11. 
+10. "Learn OpenGL - Graphics Programming" https://learnopengl.com/book/book_pdf.pdf   
+11. 黑皮书系列
+12. 
+13. 
 
 
 Papers: 
@@ -307,4 +465,4 @@ https://baijiahao.baidu.com/s?id=1671805560612599328&wfr=spider&for=pc
 
 
 
-Tried to add some video
+###### Tried to add some video
