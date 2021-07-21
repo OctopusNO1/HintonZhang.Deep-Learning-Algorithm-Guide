@@ -414,6 +414,7 @@ int main(void)  /* ANSI/ISO C function call 函数调用 */
     butler();
     printf("Yes. Bring me some tea and writeable DVDs.\n");
     
+
     return 0;
 }
 void butler(void)   /* ANSI/ISO C function definition 函数定义 */
@@ -501,8 +502,7 @@ int main(void)
     printf("n = %d, n squared = %d, n cuded = %d\n", n, n2, n3);
     
 
-​	return 0;
-
+    return 0;
 }
 
 ![Tracing a Program](/Users/swdiag/CLionProjects/Artificial-Intelligence-Guide/docs/images/CLanguage/Tracing a Program.png)
@@ -641,21 +641,22 @@ You'll find answers to the review questions in Appendix A, "Answers to the Revie
 
    {
 
-   ​	int a, b;
+        int a, b;
 
-   
 
-   ​		a = 5;
-
-   ​		b = 2;	/* line 7 */
-
-   ​		b = a;	/* line 8 */
-
-   ​		a = b;	/* line 9 */
-
-   ​		printf("%d %d\n", b, a);
-
-   ​		return 0;
+   ​     
+   ​     
+        a = 5;
+        
+        b = 2;	/* line 7 */
+        
+        b = a;	/* line 8 */
+        
+        a = b;	/* line 9 */
+        
+        printf("%d %d\n", b, a);
+    
+        return 0;
 
    }
 
@@ -671,21 +672,21 @@ You'll find answers to the review questions in Appendix A, "Answers to the Revie
 
    {
 
-   ​	int x, y;
+    int x, y;
 
-   ​	
+   
 
-   ​	x = 10;
+    x = 10;
 
-   ​	y = 5;	/* line 7 */
-
-   ​	y = x + y;	/* line 8 */
-
-   ​	x = x*y;	/* line 9 */
-
-   ​	printf("%d %d\n", x, y);
-
-   ​	return 0;
+   	y = 5;	/* line 7 */
+   	
+   	y = x + y;	/* line 8 */
+   	
+   	x = x*y;	/* line 9 */
+   	
+   	printf("%d %d\n", x, y);
+   	
+   	return 0;
 
    }
 
@@ -761,6 +762,33 @@ You'll find answers to the review questions in Appendix A, "Answers to the Revie
 
 ## 第3章 Data and C 数据和C
 
+You will learn about the following in this chapter:
+
+Keywords:
+
+int, short, long, unsigned, char, float, double, _Bool, _Complex, _Imaginary
+
+Operator:
+
+sizeof
+
+Funciton:
+
+scanf()
+
+The basc data types that C uses
+
+The distinctions between integer types and floating-point types
+
+Writing constants and declaring variables of those types
+
+How to use the printf() and scarf() functions to read and write values of different types
+
+Programs work with data. You feed numbers, letters字母, and words to the computer, and you expect it to do something with the data. In this chapter, you do more than just read about data; you practice manipulating data, which is much more fun.
+
+This chapter explores the two great families of data types: Integer and floating point. C offers several varieties of these types. This chapter tells you what the types are, how to declare them, and how and when to use them. 
+Also, you discover the differences between constants and variables, and as a bonus, your first **interactive program** is coming up shortly. 
+
 ### 3.1 A Sample Program 示例程序
 
 Listing 3.1	The platinum.c Program
@@ -773,33 +801,84 @@ int main(void)
 
 {
 
-​	float weight;	/* user weight	*/
-
-​	float value;		/* platinum equivalent	*/
-
-​	
-
-​	printf("Are you worth your weight in platinum?\n");
+        float weight;	/* user weight	*/
+    
+        float value;		/* platinum equivalent	*/
 
 
 
-​	scanf("", &weig);
+        printf("Are you worth your weight in platinum?\n");
+
+
+
+        scanf("", &weig);
+        value = 1700.0 * weight * 14.5833;
+        
+        return 0;
 
 }
 
 ### 	What's New in This Program?
 
-​	
+The most outstanding new feature is that this program is interactive. The computer uses *scanf()* ask you for information and then uses t he number you enter. For example, the sample program can be uses for any reasonable weight, not just for 156 pounds. Together, these two functions enable you to establish a two-way communication with your computer (see Figure 3.1), and that makes using a computer much more fun.
+
+This chapter explains the first two items in this list of new features: variables and constants of various data types. Chapter 4, "Character Strings and Formatted Input/Output," covers the last three items, but this chapter will continue to make limited use of *scans()* and *printf()*.
+
+
 
 ### 3.2 Data Variables and Constants 变量与常量数据
 
+
+
 ### 3.3 Data: Data-Type Keywords 数据：数据类型关键字
+
+Table 3.1 **C Data Keywords**
+
+| Original K&R Keywords | C90 K&R Keywords | C99 Keywords |
+| --------------------- | ---------------- | ------------ |
+| int                   | signed           | _Bool        |
+| long                  | void             | _Complex     |
+| short                 |                  | _Imaginary   |
+| unsigned              |                  |              |
+| char                  |                  |              |
+| float                 |                  |              |
+| double                |                  |              |
+
+The types created with these keywords can be divided into two families on the basis of how they are stored in the computer: *integer* types and *floating-point* types.
+
+###### Bits, Bytes, and Words
+
+The terms bit, byte, and word can be used to describe units of computer data or to describe units of computer memory. We'll concentrate on the second usage here. 
+
+The smallest unit of memory is called a bit.
+
+The byte is the usual unit of computer memory.
+
+A word is the natural unit of memory for a given computer design. 
+
+
 
 #### 3.3.1 Integer Versus Floating-Point Types 整数和浮点数
 
+For human, the difference between integers and floating-point numbers is reflected in the way they can be written. For a computer, the difference is reflected in the way they are stored. Let's look at each of the two classes in turn.
+
+
+
 #### 3.3.2 The Integer 整数
 
+![Screen Shot 2021-07-10 at 5.32.45 PM](/Users/swdiag/CLionProjects/Artificial-Intelligence-Guide/docs/images/CLanguage/StoringInteger.png)
+
+Figure 3.2	Storing the integer 7 using a binary code.
+
+
+
 #### 3.3.3 The Float-Point Number 浮点数
+
+![StoringFloat](/Users/swdiag/CLionProjects/Artificial-Intelligence-Guide/docs/images/CLanguage/StoringFloat.png)
+
+Figure 3.3	Storing the number pi in floating-point format (decimal version).
+
+
 
 ### 3.4 Basic C Data Types C语言基本数据类型
 
@@ -807,9 +886,25 @@ int main(void)
 
 ##### Declaring an int Variable
 
+int erns; 
+
+int hogs, cows, goats;
+
 ##### Initializing a Variable
 
+int hogs = 21;
+
+int cows = 32, goats = 14;
+
+int dogs, cats = 94;	/* valid, but poor, form */
+
+![DefiningInitializingVariable](/Users/swdiag/CLionProjects/Artificial-Intelligence-Guide/docs/images/CLanguage/DefiningInitializingVariable.png)
+
+Figure 3.4	Defining and initializing a variable.
+
 ##### Type int Constants
+
+
 
 ##### Printing int Values
 

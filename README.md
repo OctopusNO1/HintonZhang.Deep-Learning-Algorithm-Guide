@@ -17,7 +17,37 @@ SOLID is a mnemonic acronym for 5 design principles of object-oriented programmi
 
 ### 1.2 Python 
 
-Others: SQL, Swift
+### Others:
+### 1.3 SQL
+#### 关联规则：
+假设I={I1, I2, ..., Im}是项的集合。给定一个交易数据库D，其中每个事务(Transaction)t是I的非空子集，即每一个交易都与一个唯一的标识符TID(Transaction ID)对应。
+关联规则在D中的支持度(support)是D中事务同时包含X、Y的百分比，即概率；置信度(confidence)是D中事务已经包含X的情况下，包含Y的百分比，即条件概率。如果满足
+最小支持度阈值和最小置信度阈值，则认为关联规则是有趣的。这些阈值是根据挖掘需要人为设定。
+
+​		基本概念表1：关联规则的简单例子
+
+例子
+
+| TID  | 网球拍 | 网球 | 运动鞋 | 羽毛球 |
+| ---- | ------ | ---- | ------ | ------ |
+| 1    | 1      | 1    | 1      | 0      |
+| 2    | 1      | 1    | 0      | 0      |
+| 3    | 1      | 0    | 0      | 0      |
+| 4    | 1      | 0    | 1      | 0      |
+| 5    | 0      | 1    | 1      | 1      |
+| 6    | 1      | 1    | 0      | 0      |
+
+​		用一个简单的例子说明。表1是顾客购买记录的数据库D，包含6个事务。项集I={网球拍，网球，运动鞋，羽毛球}
+
+### 1.4 Swift, OC, MacOS and iOS
+https://www.jianshu.com/p/5765e9dba738
+https://pymlovelyq.github.io/posts/66dfe877/
+https://segmentfault.com/q/1010000000600234
+https://zhuanlan.zhihu.com/p/31438009
+https://zhuanlan.zhihu.com/p/53217607
+
+
+
 
 Math, Physical in AI
 
@@ -42,29 +72,38 @@ The target variable of the classification problem is only valued in a limited ta
 
 Supervised learning is to have an input variable (independent variable) and an output variable (dependent variable), and use a certain algorithm to learn the mapping function from input to output. The goal is to get a sufficiently good approximate mapping function that can be used to predict the output variable when a new variable is input. Because the learning process of the algorithm from the data set can be seen as a teacher supervising learning, it is called supervised learning. Supervised learning can be further divided into classification (output category labels) and regression (output continuous values) problems. 监督式学习是拥有一个输入变量（自变量）和一个输出变量（因变量），使用某种算法去学习从输入到输出之间的映射函数。目标是得到足够好的近似映射函数，当输入新的变量时可以以此预测输出变量。因为算法从数据集学习的过程可以被看作一名教师在监督学习，所以被称为监督式学习。监督式学习可以进一步分为分类（输出类别标签）和回归（输出连续值）问题。
 
-Several commonly used algorithms in supervised learning:  
+#### Several commonly used algorithms in supervised learning:  
 
 1. K-nearest neighbor algorithm
 2. Decision tree algorithm
 3. Naive Bayes algorithm
 
+
+
 ### 2.2 Unsupervised Learning 无监督学习
+输入数据无标签则为无监督学习。
+
 The process of self-learning by students without a teacher. There is no data annotation, only the data itself. The question to be answered is "what can be found from the data X", and the main problem to be solved is "clustering". 在没有老师的情况下，学生自学的过程。没有任何的数据标注，只有数据本身。要回答的问题是"从数据X中能发现什么"，解决的主要是“聚类（Clustering）”问题。
 
 Unsupervised learning refers to only input variables and no related output variables. The goal is to model the underlying structure and distribution in the data in order to learn more about the data. Compared with supervised learning, unsupervised learning has no exact answers and the learning process is not supervised. The algorithm runs independently to discover and express the structure in the data. Unsupervised learning can be further divided into clustering problems (discovering internal groupings in the data) and association problems (the association and rules between the various parts of the data). 非监督式学习指的是只有输入变量，没有相关的输出变量。目标是对数据中潜在的结构和分布建模，以便对数据做进一步的学习。相比于监督式学习，非监督式没有确切的答案和学习过程也没有监督，算法独自运行发现和表达数据中的结构。非监督式学习进一步可以分为聚类问题（在数据中发现内在的分组）和关联问题（数据的各部分之间的关联和规则）。
+无监督学习是指只有输入变量而没有输出变量。
 
-Several commonly used algorithms in unsupervised learning:
+#### Several commonly used algorithms in unsupervised learning:
 
 1. K-means clustering algorithm
 2. Spectral clustering algorithm
 3. Principal component analysis(PCA)
 
-Example: transcoder
+#### Example: Facebook  TransCoder
+
+A transcompiler反编译器, also known as source-to-source translator, is a system that converts source code from a high-level programming language (such as C++ or Python) to another. Transcompilers are primarily used for interoperability, and to port codebases written in an obsolete or deprecated language (e.g. COBOL, Python 2) to a modern one. They typically rely on handcrafted rewrite rules, applied to the source code abstract syntax tree. Unfortunately, the resulting translations often lack readability, fail to respect the target language conventions, and require manual modifications in order to work properly. The overall translation process is timeconsuming and requires expertise in both the source and target languages, making code-translation projects expensive. Although neural models significantly outperform their rule-based counterparts in the context of natural language translation, their applications to transcompilation have been limited due to the scarcity of parallel data in this domain. In this paper, we propose to leverage recent approaches in unsupervised machine translation to train a fully unsupervised neural transcompiler. We train our model on source code from open source GitHub projects, and show that it can translate functions between C++, Java, and Python with high accuracy. Our method relies exclusively on monolingual source code, requires no expertise in the source or target languages, and can easily be generalized to other programming languages. We also build and release a test set composed of 852 parallel functions, along with unit tests to check the correctness of translations. We show that our model outperforms rule-based commercial baselines by a significant margin.
 
 
 
 #### Spark
 #### XGboost
+
+
 
 ### 2.3 Semi-Supervised Learning 半监督学习 
 
@@ -75,6 +114,17 @@ Semi-supervised learning is a learning method that combines supervised and unsup
 
 
 ### 2.4 Deep Learning
+#### Activation Function 激活函数
+
+在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端。
+
+| Sigmoid函数 | Tanh函数 | ReLu函数 | Leaky Re Lu函数 |      |
+| ----------- | -------- | -------- | --------------- | ---- |
+|             |          |          |                 |      |
+
+
+
+
 #### Tensorflow
 #### Caffe
 #### Torch & Lua Program
@@ -150,9 +200,13 @@ Edge = cv2.Cammy(gray, low_threhold), high_threshold)
 ### 
 
 
-Computer Vision
-NLP
-语音识别
+## Computer Vision
+<https://github.com/OctopusNO1/Computer-Vision-Guide>
+
+
+
+## NLP
+## 语音识别
 
 
 
@@ -196,7 +250,7 @@ Learn modern OpenGL graphics programming in a step-by-step fashion.
 
 **1.1 Prerequisites 先修**
 
- 
+
 
 ##### 	Part I	Getting started	开始
 
@@ -344,9 +398,11 @@ Learn modern OpenGL graphics programming in a step-by-step fashion.
 
 
 
-SLAM
-Planning
-Control
+SLAM：
+Planning：
+Control：
+
+
 Others：
 Quantum Computing+ML
 #### 
@@ -360,7 +416,15 @@ AI and Cyber Security
 AI and Game
 Non-technical
 AI and Product
-AI and 建筑设计，城市（城市操作系统、城市管理系统平台）交通
+
+AI and 建筑学建筑设计，BIM，CIM智慧城市（城市操作系统、城市管理系统平台）交通，城市空间信息工程
+
+AI and 土木工程
+结构动力学
+用神经网络做
+模态分析，频域分解法（FDD, Frequency Domain Decomposition）
+https://www.zhihu.com/question/27691300
+
 AI石油能源
 AI生物科学
 AI破案
@@ -371,18 +435,65 @@ AI政策
 AI Company
 Kubeflow连接机器学习和云计算
 机器学习中的并行计算
+建筑学与软件设计模式
 
 
-## interview experience/面试经验
-Baidu front-end development
-1. layout
 
-June 22's Tencent back-end development interview
-1. data structure and algorithm
+## efficient look for a job 找工作
+
+### Dream business
+Baidu Alibaba Tencent Jingdong Apple Huawei Xiaomi 计算机AI
+CSCEC CCCCL THUPDi AI城市
+
+### career planning 职业规划:
+
+Career: Machine Learning Algorithm Engineer( Programming Language: C/C++, Java, Python, etc )
+
+
+
+### improve competitiveness 提高竞争力
+
+Good job/specialization 拿手活/专精一样: Machine Learning Algorithm, etc
+
+
+
+### Resume 简历
+#### 顶会：NIPS
+#### 比赛：
+#### Internet Famous Enterprises 互联网名企: Such as BATencent, Apple, etc
+#### 
+
+### Effective Introduction 有效内推 > 
+### Offline job fair 线下招聘会 > 
+### Recruitment website 招聘网站 
+#### 智联招聘
+#### 
+
+### Interview 面试
+
+### Interview questions/面试题
+Especially the wrong questions, be sure to clarify the wrong questions and write them down!
+尤其是错题，一定要将错题弄清楚记下来！
+
+### Interview experience/面试经验
+
+
+
+#### Algorithm 算法
+
+#### System Design Interview 系统设计面试
+
+#### back-end development
+##### June 22's Tencent interview
+###### 1. data structure and algorithm
 sorting algorithm
 time complexity   
-2. operating system
+###### 2. operating system
 multi-process and multi-thread
+
+#### front-end development
+#### Baidu interview
+##### 1. layout
 
 
 
@@ -405,7 +516,7 @@ multi-process and multi-thread
 
 
 ## Reference List:
-Article:
+### Article:
 1. https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer
 2. https://github.com/ZuzooVn/machine-learning-for-software-engineers
 3. https://www.codementor.io/@zuzoovn/how-i-plan-to-become-a-machine-learning-engineer-a4metbcuk
@@ -419,13 +530,25 @@ Article:
 11. TransCoder: 
     1. http://www.techweb.com.cn/cloud/2020-06-10/2793397.shtml
     2. https://blog.csdn.net/triplemeng/article/details/106849239
+    3. Facebook NIPS Paper "Unsupervised Translation of Programming Languages" 
+       https://arxiv.org/pdf/2006.03511.pdf
+    4. 
 12. C/C++ convert to Python: 
     1. Swig: 
     2. ctypes: https://zhuanlan.zhihu.com/p/20152309
 13. 
 
-International Classic Books: 
+#### Computer Graphic
+1. https://zhuanlan.zhihu.com/p/386510829
+2. https://zhuanlan.zhihu.com/p/357265599
+3. https://www.zhihu.com/column/c_1354832966116417536
+4. 
 
+#### Architecture, BIM
+1. https://www.planacademy.com/best-bim-books-to-own/
+2. 
+
+International Classic Books:
 1. "C Primer Plus"
 2. "C++ Primer"
 3. "The C++ Programming Language"
@@ -446,8 +569,7 @@ Papers:
 Project: 
 
 
-Github: 
-
+Github:
 1. https://github.com/ZuzooVn/machine-learning-for-software-engineers
 
 Mooc:
@@ -455,6 +577,8 @@ Mooc:
 2. Edx
 3. Udacity
 4. Udemy
+5. kaikeba
+
 Jobs Description:
 1. Apple Machine Learning Engineer-Applied ML Jobs
 https://jobs.apple.com/en-us/details/200166605/machine-learning-engineer-applied-ml
@@ -466,3 +590,4 @@ https://baijiahao.baidu.com/s?id=1671805560612599328&wfr=spider&for=pc
 
 
 ###### Tried to add some video
+
