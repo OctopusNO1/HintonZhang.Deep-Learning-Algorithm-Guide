@@ -550,7 +550,7 @@ multi-process and multi-thread
 1. https://www.planacademy.com/best-bim-books-to-own/
 2. 
 
-International Classic Books:
+#### International Classic Books:
 1. "C Primer Plus"
 2. "C++ Primer"
 3. "The C++ Programming Language"
@@ -579,13 +579,16 @@ Mooc:
 2. Edx
 3. Udacity
 4. Udemy
-5. kaikeba
+5. 
+kaikeba
 
 Jobs Description:
 1. Apple Machine Learning Engineer-Applied ML Jobs
 https://jobs.apple.com/en-us/details/200166605/machine-learning-engineer-applied-ml
 https://jobs.apple.com/en-us/search?team=machine-learning-and-ai-SFTWR-MCHLN
 https://www.apple.com/careers/us/machine-learning-and-ai.html
+Tencent:
+
 Baidu:
 https://baijiahao.baidu.com/s?id=1671805560612599328&wfr=spider&for=pc
 

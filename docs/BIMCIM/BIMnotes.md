@@ -100,10 +100,8 @@ This is my learning notes for reading the book "BIM Handbook".
 #### 7.5 Generic BIM System Requirements for Fabricators
 #### 7.6 Major Classes of Fabricators and Their Specific Needs
 #### 7.7 Adopting BIM in a Fabrication Operation    
-#### 7.8 Conclusion 
+#### 7.8 Conclusion
 ####     Chapter 7 Discussion Question  
-
-
 ### Chapter 8 The Future: Building with BIM
 #### 8.0 Executive Summary
 #### 8.1 Introduction
