@@ -18,14 +18,19 @@ g++常用命令选项：https://www.runoob.com/cplusplus/cpp-environment-setup.h
 
 2、Visual Studio（Graphical Interface）
 
+3、另外还有makefile
+
 ## C++基本语法
 C++程序可以定义为对象的集合，这些对象通过调用彼此的方法进行交互。现在让我们简要地看一下什么是类、对象、方法、即时变量。
-类
-对象是类的实例，具有状态和行为。
+**类**是描述对象行为/状态的模板/蓝图。
+**对象**是类的实例，具有状态和行为。
+**方法**是一种行为，一个类可以包含多个方法，可以在方法中写入逻辑、操作数据以及执行所有的动作。
+**即时变量**：每个对象都有其独特的即时变量。对象的状态是由这些即时变量的值创建的。
+
 写一个Hello World程序。
 ‘’‘
-#include <iostream>
-using namespace std;
+#include <iostream>	//包含头文件<iostream>
+using namespace std;	//告诉编译器使用std命名空间
 
 int main(){
 	cout << "Hello World" << endl;
@@ -46,6 +51,17 @@ int main(){
   
   
 ## C++数据类型
+### 七种基本的内置类型
+其中 wchar_t 的由来： 
+typedef short int wchar_t;
+所以 wchar_t 实际上的空间是和 short int 一样。
+一些基本类型可以使用一个或多个类型修饰符进行修饰：
+signed、unsigned、short、long
+下表显示了各种变量类型在内存中存储值时需要占用的内存，以及该类型的变量所能存储的最大值和最小值。
+	
+### typedef
+### 
+
 
 ## 面向对象程序设计
 C++ 完全支持面向对象的程序设计，包括面向对象开发的四大特性：
@@ -87,3 +103,6 @@ C++ 完全支持面向对象的程序设计，包括面向对象开发的四大�
   
 # Reference:  
 https://www.runoob.com/cplusplus/cpp-tutorial.html
+
+
+
