@@ -166,12 +166,12 @@ Semi-supervised learning is a learning method that combines supervised and unsup
 | ----------- | -------- | -------- | --------------- | ---- |
 |             |          |          |                 |      |
 
-
-
-
 #### Tensorflow
+    
 #### Caffe
+    
 #### Torch & Lua Program
+    
 
 ### 2.5 Reinforcement Learning 强化学习
 
@@ -181,8 +181,9 @@ Reinforcement learning can train the program to make a certain decision. The pro
 ### 2.6 Data Mining 数据挖掘
 
 ### 2.7 Big Data 大数据
+#### Linux 开发环境
+#### Linux 集群环境
 #### Hadoop(important)
-
     
 #### ZooKeeper
 
