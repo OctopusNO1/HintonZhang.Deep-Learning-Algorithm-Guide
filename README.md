@@ -102,7 +102,6 @@ A transcompiler反编译器, also known as source-to-source translator, is a sys
 #### XGboost
 
 
-
 ### 2.3 Semi-Supervised Learning 半监督学习 
 
 Semi-supervised learning(SSL) is a key issue in the field of pattern recognition and machine learning. It is a learning method that combines supervised learning and unsupervised learning. Semi-supervised learning uses a large amount of unlabeled data and simultaneously uses labeled data for pattern recognition. 半监督学习是模式识别和机器学习领域研究的重点问题，是监督学习与无监督学习相结合的一种学习方法。 半监督学习使用大量的未标记数据，以及同时使用标记数据，来进行模式识别工作。
@@ -111,7 +110,7 @@ Semi-supervised learning is a learning method that combines supervised and unsup
 
 
 
-### 2.4 Deep Learning
+### 2.4 Deep Learning 深度学习
 #### Activation Function 激活函数
 
 在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端。
@@ -134,9 +133,13 @@ Reinforcement learning can train the program to make a certain decision. The pro
 
 ### 2.6 Data Mining 数据挖掘
 
-### 2.7 Big Data
+### 2.7 Big Data 大数据
+#### Hadoop
+#### ZooKeeper
 
 ### 2.8 Pattern Recognition 模式识别
+
+### 2.9 Algorithm Optimization 算法优化
 
 
 
