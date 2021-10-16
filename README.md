@@ -8,11 +8,13 @@ I help this guide can help you to be a Machine Engineer in Tencent.
 2. [C++ Language](docs/Languages/C++Language.md)
 STL(The Standard Template Library, 标准模板库) is a set of C++ template classes(模板类) to provide common programming data structures, algorithm and functions such as vector, list链表, queue队列 and stack栈. 
 C++ STL的三个核心组件都带有丰富的预定义函数，帮助我们通过简单的方式处理复杂的任务：
+
 | 组件                |                                       描述                                            |
 | ------------------ | ------------------------------------------------------------------------------------- |
 | 容器(Containers)    | 容器是用来管理某一类对象的集合。C++ 提供了各种不同类型的容器，比如 deque、list、vector、没安排等。 |
 | 算法(Algorithm)     | 算法作用于容器。它们提供了各种不同类型的容器，比如 deque、list、vector、map等。                 |
 | 迭代器(iterators)   | 迭代器用于遍历对象集合的元素。这些集合可能是容器，也可能是容器的子集。                            |
+
 下面的程序演示了vector容器（一个C++标准的模板），它与数组十分相似，唯一不同的是，向量在需要拓展大小的时候，会自动处理它自己的存储需求：
 #include <iostream>
 #include <vector>
