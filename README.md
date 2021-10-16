@@ -157,7 +157,7 @@ Semi-supervised learning is a learning method that combines supervised and unsup
 
 
 
-### 2.4 Deep Learning
+### 2.4 Deep Learning 深度学习
 #### Activation Function 激活函数
 
 在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端。
@@ -180,11 +180,15 @@ Reinforcement learning can train the program to make a certain decision. The pro
 
 ### 2.6 Data Mining 数据挖掘
 
-### 2.7 Big Data
+### 2.7 Big Data 大数据
+#### Hadoop(important)
+
+    
+#### ZooKeeper
 
 ### 2.8 Pattern Recognition 模式识别
 
-
+### 2.9 Algorithm Optimization 算法优化
 
 
 
