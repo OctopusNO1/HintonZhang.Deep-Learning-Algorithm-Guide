@@ -181,6 +181,35 @@ Reinforcement learning can train the program to make a certain decision. The pro
 ### 2.6 Data Mining 数据挖掘
 
 ### 2.7 Big Data 大数据
+#### 1 Java基础语法
+##### 1-1 环境搭建+入门
+##### 1-2 数据类型及转换
+##### 1-3 运算符
+##### 1-4 条件控制语句
+##### 1-5 循环
+##### 1-6 随机数+开发工具
+##### 1-7 数组
+##### 1-8 方法与debug
+##### 1-9 进制
+##### 1-10 二维数组
+#### 2 Java面向对象基础
+#### 3 Java API
+##### 3-1 String类
+##### 3-2 StringBuilder
+#### 4 Java集合基础
+##### 4-1 集合-ArrayList
+##### 4-2 学生管理系统
+#### 5 Java面向对象进阶
+#### 6 Java常用API&异常
+#### 7 Java集合
+#### 8 Java IO流
+#### 9 Java多线程
+#### 10 Java网络编程
+#### 11 Java基础加强
+#### 12 Linux
+#### 13 MySQL
+#### 14 JDBC
+#### 15 Maven基础
 #### Linux 开发环境
 #### Linux 集群环境
 #### Hadoop(important)
