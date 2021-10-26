@@ -200,8 +200,22 @@ Reinforcement learning can train the program to make a certain decision. The pro
 ##### 4-1 集合-ArrayList
 ##### 4-2 学生管理系统
 #### 5 Java面向对象进阶
+##### 5-1 分类和static
+##### 5-2 老师管理系统
+##### 5-3 继承
+##### 5-4 接口
+##### 5-5 多态与内部类
+##### 5-6Lambda表达式
 #### 6 Java常用API&异常
+##### 6-1 API的基本使用与Object类
+##### 6-2 BigDecimal类和Integer类
+##### 6-3 数组的高级操作与递归
+##### 6-4 时间日期类
+##### 6-5 异常
 #### 7 Java集合
+##### 7-1 Collection
+##### 7-2 List与LinkedList
+
 #### 8 Java IO流
 #### 9 Java多线程
 #### 10 Java网络编程
