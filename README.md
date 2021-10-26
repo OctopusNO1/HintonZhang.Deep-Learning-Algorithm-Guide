@@ -226,7 +226,13 @@ Reinforcement learning can train the program to make a certain decision. The pro
 ##### 8-4 字符流&字符缓冲流
 ##### 8-5 转换流&对象操作流&Properties
 #### 9 Java多线程
+##### 9-1 多线程
+##### 9-2 线程安全问题
+##### 9-3 生产者和消费者
+##### 9-4 线程池&volatile
 #### 10 Java网络编程
+##### 10-1 网络编程入门
+
 #### 11 Java基础加强
 #### 12 Linux
 #### 13 MySQL
