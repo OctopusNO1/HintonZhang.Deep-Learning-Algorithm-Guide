@@ -413,6 +413,10 @@ Reinforcement learning can train the program to make a certain decision. The pro
 This is my study notes of Self-Driving Car Engineer Nanodegree Program on Udacity.
 
 ### 1. Computer Vision
+   
+### 安防监控之实时口罩人脸检测
+
+### 遮挡状态下活体检测与人脸识别
 
 #### Project: Find Lane Lines
 
