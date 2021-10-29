@@ -414,6 +414,10 @@ This is my study notes of Self-Driving Car Engineer Nanodegree Program on Udacit
 
 ### 1. Computer Vision
    
+https://www.eet-china.com/mp/a61561.html
+https://www.robots.ox.ac.uk/~vgg/hzbook/
+https://www.robots.ox.ac.uk/~vgg/hzbook/hzbook2/HZfigures.html
+   
 ### 安防监控之实时口罩人脸检测
 
 ### 遮挡状态下活体检测与人脸识别
