@@ -397,10 +397,18 @@ Reinforcement learning can train the program to make a certain decision. The pro
 ##### 15-3 依赖管理与生命周期
 
 #### Linux 开发环境
+   
+
 
 #### Linux 集群环境
+   
+10.12 作业，待提交
 
 #### Hadoop(important)
+   
+#### Hive
+   
+#### NoSQL
 
 #### ZooKeeper
 
