@@ -10,6 +10,14 @@ I help this guide can help you to be a Machine Engineer in Tencent.
 1. [C Language](docs/Languages/CLanguage.md)
 2. [C++ Language](docs/Languages/C++Language.md)
    STL(The Standard Template Library, 标准模板库) is a set of C++ template classes(模板类) to provide common programming data structures, algorithm and functions such as vector, list链表, queue队列 and stack栈.
+https://blog.csdn.net/weixin_41923961/article/details/82670050
+https://leetcode-cn.com/problems/number-of-students-doing-homework-at-a-given-time/solution/jian-dan-ti-mu-lian-xi-stl-by-liujinghua687/
+https://vjudge.net/contest/204422
+https://www.codeleading.com/article/78472713648/
+https://www.itread01.com/content/1542849003.html
+https://blog.nowcoder.net/n/2fd17c4dcb2642f6b9c83f5570981162
+https://www.cplusplus.me/category/acm/stllx
+https://blog.csdn.net/LiuJiuXiaoShiTou/article/details/76686972
 
 C++ STL的三个核心组件都带有丰富的预定义函数，帮助我们通过简单的方式处理复杂的任务：
 
