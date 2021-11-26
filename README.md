@@ -424,8 +424,11 @@ Reinforcement learning can train the program to make a certain decision. The pro
 #### Hive
    
 #### NoSQL
+##### kafka(important)
 
 #### ZooKeeper
+   
+#### 
 
 ### 2.8 Pattern Recognition 模式识别
 
