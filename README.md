@@ -113,6 +113,9 @@ Data Analysis
 ## 2. Machine Learning Algorithm(important)
 
 ## 机器学习算法（重要）
+   
+### 自动机器学习，AutoML
+AutoML是机器学习的一个新子研究领域，以机器学习渐进式自动化为目标，可以使非机器学习专家无需机器学习方面的专家知识即可轻松使用现成的机器学习方法，以提高机器学习的效率并加速机器学习的研究。
 
 10 common machine learning algorithm:
 
