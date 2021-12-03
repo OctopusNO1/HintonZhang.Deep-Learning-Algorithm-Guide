@@ -7,7 +7,11 @@ I help this guide can help you to be a Machine Engineer in Tencent.
 
 ### 1.1 C/C++ or Java
 
+https://blog.csdn.net/chy19911123/article/details/49001713
+Java C++ list
+
 1. [C Language](docs/Languages/CLanguage.md)
+
 2. [C++ Language](docs/Languages/C++Language.md)
    STL(The Standard Template Library, 标准模板库) is a set of C++ template classes(模板类) to provide common programming data structures, algorithm and functions such as vector, list链表, queue队列 and stack栈.
 https://blog.csdn.net/weixin_41923961/article/details/82670050
@@ -66,6 +70,8 @@ return 0;
 ```
 
 }
+   
+   
 
 #### object-oriented program
 
