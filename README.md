@@ -10,9 +10,9 @@ I help this guide can help you to be a Machine Engineer in Tencent.
 https://blog.csdn.net/chy19911123/article/details/49001713
 Java C++ list
 
-1. [C Language](docs/Languages/CLanguage.md)
+#### 1. [C Language](docs/Languages/CLanguage.md)
 
-2. [C++ Language](docs/Languages/C++Language.md)
+#### 2. [C++ Language](docs/Languages/C++Language.md)
    STL(The Standard Template Library, 标准模板库) is a set of C++ template classes(模板类) to provide common programming data structures, algorithm and functions such as vector, list链表, queue队列 and stack栈.
 https://blog.csdn.net/weixin_41923961/article/details/82670050
 https://leetcode-cn.com/problems/number-of-students-doing-homework-at-a-given-time/solution/jian-dan-ti-mu-lian-xi-stl-by-liujinghua687/
@@ -71,8 +71,161 @@ return 0;
 
 }
    
+#### Java
+刷题！错题集！
+一、选择题
+1. Java中有四种访问修饰符，其中default（默认）修饰符能使一个类中的成员变量仅仅具有包可见性。protected具有子父类可见性，public具有项目可见性，private具有类可见性。
+4. return语句不能用来返回对象。
+7. 方法中的形参可以和方法所属类定义的属性（变量）同名。
+12. 某个非抽象类的父类是抽象类，则这个子类必须重载父类的所有抽象方法。
+18. 正确的声明方式：public abstract class Car{}
+20. 假设现在有一个对象X，有一个属性a. 则访问当前属性的方法是new X().a
+22. 实现一个接口必须实现接口的所有方法
+23. 接口中的数据成员都是静态常量
+二、简答题
+1、定义一个整形数组 int []arr={30, 11, 2, 35, 60, 70, 15}，要求实现按升序排序。
+public class SortDemo{
+   public static void main(String[] args){
+      int []arr={30, 11, 2, 35, 60, 70, 15};
+      int temp;
    
+      for(int i=0; i<arr.length-1; i++){
+         for(int j=i+1; j<arr.length; j++){
+            if(arr[i]>arr[j]){
+               temp=arr[j];
+               arr[j]=arr[i];
+               arr[i]=temp;
+            }
+         }
+      }
+   }   
+}
+2、定义一个Person类，包含name, addr, sex, age，分别是String, String, char, int类型，要求提供无参构造方法，一个四参数构造方法，提供setter&getter。
+public class Person{
+   private String name;
+   private String addr;
+   private char sex;
+   private int age;
+   
+   public Person(){
+      super();
+   }
+   
+   public Person(String name, String addr, char sex, int age){
+      super();
+      this.name=name;
+      this.addr=addr;
+      this.sex=sex;
+      this.age =age;
+   }
+   
+   public String getName(){
+      return this.name;
+   }
+   public void setName(String name){
+      this.name = name;
+   }   
+   public String getAddr(){
+      return this.addr;
+   }
+   public void setAddr(String addr){
+      this.addr = addr;
+   }   
+   public char getSex(){
+      return this.sex;
+   }
+   public void setSex(char sex){
+      this.sex = sex;
+   }   
+   public int getAge(){
+      return this.age;
+   }
+   public void setAge(int age){
+      this.age = age;
+   }
+}
+3、定义类Shape，用来表示二维图形。Shape具有抽象方法area与perimeter，分别计算图形的面积与周长，定义圆形（Circle）与长方形（Rectangle）均为Shape子类请编写Shape、Circle、Rectangle类，定义抽象方法同时在子类中进行覆盖。
+public abstract class Shape{
+   public abstract double area();
+   public abstract double perimeter();
+   
+   public class Circle extends Shape{
+      private double radios;
+   
+      public double getRadios(){
+         return this.radios;
+      }
+      public void setRadios(double radios){
+         this.radios = radios;
+      }
+      
+      @Override
+      public double area(){
+         return Math.PI*radios*radios;
+      }
+      @Override
+      public double perimeter(){
+         return 2*Math.PI*radios;
+      }
+   }   
+   
+   public class Rectangle extends Shape{
+      private double length;
+      private double width;
+   
+      public double getLength(){
+         return this.length;
+      }
+      public void setLength(double length){
+         this.length = length;
+      }  
+      public double getWidth(){
+         return this.width;
+      }
+      public void setWidth(double width){
+         this.width = width;
+      }
+      
+      @Override
+      public double area(){
+         return length*width;
+      }
+      @Override
+      public double perimeter(){
+         return 2*(length+width);
+      }
+   }
+}
+4、设计两个线程操作类，并在测试类ThreadTest的main()方法中开启此线程。要求这两个类用两种方式实现。
+public class MyThread extends Thread{
+   @Override
+   public void run(){
+      Systems.out.println("MyThread runs");
+   }
+}
+public class MyRunnable implements Runnable{
+   @Override
+   public void run(){
+      Systems.out.println("MyRunnable runs");
+   }
+}
+public class ThreadTest{
+   public static void main(String[] args){
+      Thread t1 = new MyThread();
+      t1.start();
+      
+      Thread t2 = new Thread(new MyRunnable());
+      t2.start();
+   }
+}
+5、编写一个FileUtils类，定义copy(File src, File target)方法，使用字节流完成将src拷贝至target文件功能。
+public class FileUtils{
+   public void copy(File src, File target){
+      InputStream 
+   }   
+}  
 
+   
 #### object-oriented program
 
 SOLID is a mnemonic acronym for 5 design principles of object-oriented programming intended to make software designs more understandable, flexible and maintainable. These principles were first introduced in Robert C.Martin's 2000 paper Design Principles and Design Patterns.
@@ -84,8 +237,6 @@ SOLID is a mnemonic acronym for 5 design principles of object-oriented programmi
 5. 
 
 ### 1.2 Python
-
-### Others:
 
 ### 1.3 SQL
 
@@ -110,7 +261,7 @@ SOLID is a mnemonic acronym for 5 design principles of object-oriented programmi
 
 ​		用一个简单的例子说明。表1是顾客购买记录的数据库D，包含6个事务。项集I={网球拍，网球，运动鞋，羽毛球}
 
-### 1.4 Swift, OC, MacOS and iOS
+### 1.4 Others: Swift, OC, MacOS and iOS
 
 https://www.jianshu.com/p/5765e9dba738
 https://pymlovelyq.github.io/posts/66dfe877/
@@ -165,13 +316,13 @@ Unsupervised learning refers to only input variables and no related output varia
 2. Spectral clustering algorithm
 3. Principal component analysis(PCA)
 
-#### Example: Facebook TransCoder
+#### Example: NIPS Facebook TransCoder
 
 A transcompiler反编译器, also known as source-to-source translator, is a system that converts source code from a high-level programming language (such as C++ or Python) to another. Transcompilers are primarily used for interoperability, and to port codebases written in an obsolete or deprecated language (e.g. COBOL, Python 2) to a modern one. They typically rely on handcrafted rewrite rules, applied to the source code abstract syntax tree. Unfortunately, the resulting translations often lack readability, fail to respect the target language conventions, and require manual modifications in order to work properly. The overall translation process is timeconsuming and requires expertise in both the source and target languages, making code-translation projects expensive. Although neural models significantly outperform their rule-based counterparts in the context of natural language translation, their applications to transcompilation have been limited due to the scarcity of parallel data in this domain. In this paper, we propose to leverage recent approaches in unsupervised machine translation to train a fully unsupervised neural transcompiler. We train our model on source code from open source GitHub projects, and show that it can translate functions between C++, Java, and Python with high accuracy. Our method relies exclusively on monolingual source code, requires no expertise in the source or target languages, and can easily be generalized to other programming languages. We also build and release a test set composed of 852 parallel functions, along with unit tests to check the correctness of translations. We show that our model outperforms rule-based commercial baselines by a significant margin.
 
 #### Spark
 
-#### XGboost
+#### XGBoost
 
 ### 2.3 Semi-Supervised Learning 半监督学习
 
