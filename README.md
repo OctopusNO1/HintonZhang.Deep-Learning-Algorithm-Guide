@@ -219,9 +219,33 @@ public class ThreadTest{
    }
 }
 5、编写一个FileUtils类，定义copy(File src, File target)方法，使用字节流完成将src拷贝至target文件功能。
-public class FileUtils{
-   public void copy(File src, File target){
-      InputStream 
+import java.io.File;
+public final class FileUtils{
+   public static void copy(File src, File target){
+      InputStream in = null;
+      OutputStream out = null;
+      
+      try{
+         in = new InputStream(src);
+         out = new OutputStream(target);
+         int len;
+         byte[] buf = new byte[8192];
+         while((len = in.read(buf))!=-1){
+            out.write(buf, 0, len);
+         }
+      }catch(IOException e){
+         e.printStackTrace(e);
+      }finally{
+         if(out!=null){
+            try{
+               out.close();
+            }
+         }
+   
+         if(){
+            
+         }
+      }
    }   
 }  
 
