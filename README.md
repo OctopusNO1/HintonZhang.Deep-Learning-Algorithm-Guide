@@ -226,8 +226,8 @@ public final class FileUtils{
       OutputStream out = null;
       
       try{
-         in = new InputStream(src);
-         out = new OutputStream(target);
+         in = new FileInputStream(src);
+         out = new FileOutputStream(target);
          int len;
          byte[] buf = new byte[8192];
          while((len = in.read(buf))!=-1){
@@ -254,6 +254,13 @@ public final class FileUtils{
       }
    }   
 }  
+三、编程实操题
+1、使用Eclipse创建Java项目，项目名称为考生工号，在该项目中创建名称为ForDemo.java的源文件，在main方法中输出9*9乘法表（即从1*1～9*9）
+
+2、
+3、
+4、
+5、
 
    
 #### object-oriented program
