@@ -256,8 +256,19 @@ public final class FileUtils{
 }  
 三、编程实操题
 1、使用Eclipse创建Java项目，项目名称为考生工号，在该项目中创建名称为ForDemo.java的源文件，在main方法中输出9*9乘法表（即从1*1～9*9）
+public class ForDemo{
+   public static void main(String[] args){
+      for(int i=1; i<=9; i++){
+         for(int j=1; j<=i; j++){
+            Systems.out.print(i+"*"+j+"="+(i*j)+"  ");
+         }
+      Systems.out.println();
+      }
+   }
+}
+2、在考生的Java项目中，创建一个名称为ArrayDemo.java的源文件。在其中定义一个整型数组，int[] nums=new int[]{61, 23, 4, 74, 13, 148, 20}；完成Java程序，实现输出数组中的最大值(max)、最小值(min)、累加值(sum)和平均值(avg)。
+int max=nums[0];  //假定最大值为数组中的第一个元素
 
-2、
 3、
 4、
 5、
