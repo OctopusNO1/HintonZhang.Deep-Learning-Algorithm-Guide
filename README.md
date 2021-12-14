@@ -889,7 +889,8 @@ Good job/specialization 拿手活/专精一样: Machine Learning Algorithm, etc
 
 #### 顶会：NIPS
 
-#### 比赛：
+#### 比赛：Kaggle
+https://www.kaggle.com/ponyzhang
 
 #### Internet Famous Enterprises 互联网名企: Such as BATencent, Apple, etc
 
