@@ -639,6 +639,8 @@ Reinforcement learning can train the program to make a certain decision. The pro
 
 ### 2.9 Algorithm Optimization 算法优化
 
+### 2.10 Algorithm Application Research 算法应用研究
+
 ## Self-driving——The biggest application scenario of artificial intelligence
 
 This is my study notes of Self-Driving Car Engineer Nanodegree Program on Udacity.
@@ -709,7 +711,7 @@ Edge = cv2.Cammy(gray, low_threhold), high_threshold)
 
 ## NLP
 
-## 语音识别
+## Speech Recognition 语音识别
 
 ## Computer Graphics 图形学
 
