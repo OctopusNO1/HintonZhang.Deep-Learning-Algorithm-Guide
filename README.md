@@ -638,8 +638,10 @@ Reinforcement learning can train the program to make a certain decision. The pro
 ### 2.8 Pattern Recognition 模式识别
 
 ### 2.9 Algorithm Optimization 算法优化
+   
+### 2.10 机器学习分布式计算
 
-### 2.10 Algorithm Application Research 算法应用研究
+### 2.11 Algorithm Application Research 算法应用研究
 
 ## Self-driving——The biggest application scenario of artificial intelligence
 
