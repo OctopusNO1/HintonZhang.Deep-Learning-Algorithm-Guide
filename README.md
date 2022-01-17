@@ -970,4 +970,8 @@ multi-process and multi-thread
 10. https://www.zhihu.com/question/309551737/answer/950028900
 11. TransCoder:
     1. http://www.techweb.com.cn/
-       
+12. LeetCoder刷题顺序：
+   https://mp.weixin.qq.com/s?__biz=MzI0NjAxMDU5NA==&mid=328435125&idx=1&sn=3de887a586e8a6a08784036de466623e&chksm=7f22e23848556b2e67fedbd30b1ca0fcdb46ed336279aa4cb0899a0f2ff44210e829d125ade6#rd
+   https://zhuanlan.zhihu.com/p/407414826
+   
+   
