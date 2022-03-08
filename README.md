@@ -615,7 +615,17 @@ Reinforcement learning can train the program to make a certain decision. The pro
 ##### 15-3 依赖管理与生命周期
    
    
-
+   
+#### 大数据与Java/云计算/AI的关系    
+？？？     
+#### 分布式：大数据的私人订制     
+？？？     
+#### 大数据开发的标配：实时计算     
+？？？     
+#### BI技术：大数据开发最后一公里    
+？？？     
+   
+   
 #### Linux 开发环境
 百度网盘3文档！？   
 华为云
