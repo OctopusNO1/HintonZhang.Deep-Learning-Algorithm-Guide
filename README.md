@@ -1,8 +1,8 @@
-# Artificial-Intelligence-Guide
+# Deep Learning Algorithm-Guide         
 
-This is an Artificial Intelligence learning and Interview guide.
-I help this guide can help you to be a Machine Engineer in Tencent.
-
+This is an Deep Learning Algorithm Learning and Interview guide.
+I help this guide can help you to be a Deep Learning Algorithm Researcher in Tencent.
+  
 ## 1. Program Language(important)
 
 ### 1.1 C/C++ or Java
