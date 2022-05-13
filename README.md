@@ -985,3 +985,14 @@ multi-process and multi-thread
    https://zhuanlan.zhihu.com/p/407414826
    
    
+
+  
+  
+  
+### 神力AI
+https://manaai.cn/
+
+  
+  
+  
+  
